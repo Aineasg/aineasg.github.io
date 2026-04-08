@@ -644,9 +644,7 @@
       color: var(--fog);
       overflow-x: auto;
     }
-    .agent-diagram pre {
-      line-height: 1.7;
-    }
+    .agent-diagram pre { line-height: 1.7; }
     .agent-diagram .highlight { color: var(--amber); }
     .agent-diagram .ok       { color: var(--lime); }
 
@@ -721,71 +719,47 @@
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {
-      /* Cursor: hide on touch */
       body { cursor: auto; }
       #cursor, #cursor-ring { display: none; }
-
       nav { padding: .8rem 1rem; }
       .nav-links { display: none; }
       .nav-hamburger { display: flex; }
       .nav-status { font-size: .62rem; }
       .nav-status span:last-child { display: none; }
-
       section { padding: 4rem 1.2rem; }
       #hero { padding: 5rem 1.2rem 3rem; }
-
-      /* Terminal: scrollable horizontally */
       .terminal-block { padding: 1rem 1rem; font-size: .7rem; max-width: 100%; }
       .terminal-block pre { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-
-      /* Hero stats: 2×2 grid */
       .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; width: 100%; }
       .stat-box { padding: .7rem 1rem; }
       .stat-num { font-size: 1.4rem; }
-
-      /* Flip cards */
       .cards-grid { grid-template-columns: 1fr; }
       .flip-card { height: auto; min-height: 260px; }
       .flip-card-inner { transition: transform .4s ease; }
-      /* Disable hover flip on touch; tap (class toggle) still works */
       .flip-card:hover .flip-card-inner { transform: none; }
       .flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
       .flip-front, .flip-back { padding: 1.5rem; }
       .card-hint::after { content: ' (tap)'; }
-
-      /* Tables inside flip cards */
       .flip-back { overflow-x: auto; -webkit-overflow-scrolling: touch; }
       .back-table { font-size: .68rem; }
-
-      /* Two-col → single col */
       .two-col { grid-template-columns: 1fr; }
-
-      /* Agent diagram */
       .agent-diagram { font-size: .68rem; }
       .agent-diagram pre { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-
-      /* Contact */
       .contact-grid { grid-template-columns: 1fr; }
       .t-row { flex-direction: column; gap: .2rem; }
       .t-key { min-width: unset; font-size: .7rem; }
       .t-val { font-size: .75rem; }
-
-      /* Project */
       .project-header { flex-direction: column; gap: .8rem; }
       .project-links { flex-wrap: wrap; }
       .project-features { grid-template-columns: 1fr; }
-
-      /* Misc */
       .manifesto-box { padding: 1.5rem; }
       .manifesto-text { font-size: .95rem; }
       .section-desc { font-size: .85rem; }
-
-      /* Buttons */
       .btn { font-size: .68rem; padding: .4rem .85rem; }
       .contact-ctas { gap: .6rem; }
     }
 
-    /* ===== EXTRA SMALL (≤480px) ===== */
+    /* ===== EXTRA SMALL ===== */
     @media (max-width: 480px) {
       .hero-stats { grid-template-columns: 1fr 1fr; }
       .stat-num { font-size: 1.2rem; }
@@ -873,22 +847,10 @@
   </div>
 
   <div class="hero-stats reveal">
-    <div class="stat-box">
-      <span class="stat-num">6+</span>
-      <span class="stat-label">Years Experience</span>
-    </div>
-    <div class="stat-box">
-      <span class="stat-num">65+</span>
-      <span class="stat-label">Devices Repaired</span>
-    </div>
-    <div class="stat-box">
-      <span class="stat-num">10</span>
-      <span class="stat-label">Linux since age</span>
-    </div>
-    <div class="stat-box">
-      <span class="stat-num">∞</span>
-      <span class="stat-label">Patience (for machines)</span>
-    </div>
+    <div class="stat-box"><span class="stat-num">6+</span><span class="stat-label">Years Experience</span></div>
+    <div class="stat-box"><span class="stat-num">65+</span><span class="stat-label">Devices Repaired</span></div>
+    <div class="stat-box"><span class="stat-num">10</span><span class="stat-label">Linux since age</span></div>
+    <div class="stat-box"><span class="stat-num">∞</span><span class="stat-label">Patience (for machines)</span></div>
   </div>
 
   <p class="scroll-hint">Scroll to explore <span class="scroll-arrow">↓</span></p>
@@ -903,7 +865,6 @@
   <p class="section-desc reveal">Started at 12. Paid clients by 16. Component-level repairs on laptops, phones, and desktops — if it has a PCB, I've probably fixed it.</p>
 
   <div class="cards-grid">
-
     <div class="flip-card reveal reveal-delay-1">
       <div class="flip-card-inner">
         <div class="flip-front">
@@ -1054,7 +1015,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -1167,12 +1127,10 @@
       <div class="feature-line">Written in Python, runs on Linux, properly open-sourced</div>
       <div class="feature-line">Does what the OEM refused to build</div>
     </div>
-
     <div style="margin-top:1.5rem;padding:1rem;background:var(--panel);border-radius:6px;border:1px solid var(--border)">
       <div style="font-size:.7rem;color:var(--amber);margin-bottom:.5rem;letter-spacing:.08em">// HOW IT WAS BUILT</div>
       <p style="font-size:.78rem;color:var(--fog);line-height:1.7">The control centre was built through hands-on reverse engineering — analysing hardware behaviour, cross-referencing documentation, and a lot of trial and error. The internals are documented in the repo for anyone working with the same hardware. Implementation details are kept within the project itself rather than broadcast publicly.</p>
     </div>
-
     <p style="font-size:.75rem;color:var(--muted);margin-top:1.2rem">
       Currently 0 stars — Tongfang laptops are a niche enthusiast product and the repo hasn't been advertised. The code exists and works. Discovery is the next step.
     </p>
@@ -1186,10 +1144,7 @@
   <p class="section-tag reveal">// Section 04</p>
   <h2 class="section-title reveal">Technical Skills</h2>
   <p class="section-desc reveal">Self-taught across hardware, Linux, and systems. Depth over breadth — I specialise in what I can do at a component or kernel level, not what I can Google.</p>
-
-  <div class="skills-grid" id="skills-grid">
-    <!-- JS-rendered -->
-  </div>
+  <div class="skills-grid" id="skills-grid"></div>
 </section>
 
 <div class="divider"></div>
@@ -1352,7 +1307,7 @@ Agent behaviour adjusts for next task
 <section id="contact" style="padding-bottom:2rem">
   <p class="section-tag reveal">// Section 07</p>
   <h2 class="section-title reveal">Let's Work<br />Together</h2>
-  <p class="section-desc reveal">If you have a role where keeping machines alive matters more than keeping users happy — reach out. Gmail for anything real.</p>
+  <p class="section-desc reveal">If you have a role where keeping machines alive matters more than keeping users happy — reach out.</p>
 
   <div class="contact-grid reveal">
     <div>
@@ -1367,16 +1322,16 @@ Agent behaviour adjusts for next task
           <div class="t-row"><span class="t-key">name</span><span class="t-val">Aineas Giannakoulias (Αινείας Γιαννακούλιας)</span></div>
           <div class="t-row"><span class="t-key">alias</span><span class="t-val">Aineasg</span></div>
           <div class="t-row"><span class="t-key">location</span><span class="t-val">Lechaina, Greece (EU)</span></div>
-          <div class="t-row"><span class="t-key">email</span><span class="t-val"><a href="/cdn-cgi/l/email-protection#2a4b43444f4b594d6a5a58455e454404474f"><span class="__cf_email__" data-cfemail="ccada5a2a9adbfab8cbcbea3b8a3a2e2a1a9">[email&#160;protected]</span></a></span></div>
+          <div class="t-row"><span class="t-key">email</span><span class="t-val"><a href="mailto:aineasg@gmail.com">aineasg@gmail.com</a></span></div>
           <div class="t-row"><span class="t-key">github</span><span class="t-val"><a href="https://github.com/Aineasg" target="_blank" rel="noopener">github.com/Aineasg</a></span></div>
-          <div class="t-row"><span class="t-key">linkedin</span><span class="t-val"><a href="https://www.linkedin.com/in/aineas-giannakoulias-ab7a10301/" target="_blank" rel="noopener">in/aineas-giannakoulias</a><br /><span style="font-size:.65rem;color:var(--muted)">(Note: LinkedIn under construction — my personal AI says I'm a red flag if a scraper looks for hiring candidates because I have no media presence yet. I promise I'm working to fix that!)</span></span></div>
+          <div class="t-row"><span class="t-key">linkedin</span><span class="t-val"><a href="https://www.linkedin.com/in/aineas-giannakoulias-ab7a10301/" target="_blank" rel="noopener">in/aineas-giannakoulias</a></span></div>
           <div class="t-row"><span class="t-key">status</span><span class="t-val"><span style="color:var(--lime)">● Available</span> — remote worldwide</span></div>
           <div class="t-row" style="margin-top:.8rem;border-top:1px solid var(--border);padding-top:.8rem"><span class="t-key t-dim">$_</span><span class="t-val blink">_</span></div>
         </div>
       </div>
 
       <div class="contact-ctas" style="margin-top:1rem">
-        <a class="btn btn-amber" href="/cdn-cgi/l/email-protection#b3d2daddd6d2c0d4f3c3c1dcc7dcdd9dded6">✉ Send gmail</a>
+        <a class="btn btn-amber" href="mailto:aineasg@gmail.com">✉ Send Email</a>
         <a class="btn btn-ghost" href="https://github.com/Aineasg" target="_blank" rel="noopener">↗ GitHub Profile</a>
         <button class="btn btn-ghost" id="download-ats">⬇ Download Plain-Text CV</button>
       </div>
@@ -1399,7 +1354,6 @@ Agent behaviour adjusts for next task
     </div>
   </div>
 </section>
-
 </main>
 
 <!-- ATS PLAIN TEXT (hidden, for download) -->
@@ -1408,7 +1362,7 @@ AINEAS GIANNAKOULIAS
 Hardware Engineer | Linux Systems Administrator | Embedded Systems Technician
 
 CONTACT
-Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="593830373c382a3e19292b362d363777343c">[email&#160;protected]</a>
+Email: aineasg@gmail.com
 GitHub: github.com/Aineasg
 LinkedIn: linkedin.com/in/aineas-giannakoulias-ab7a10301
 Location: Lechaina, Greece | EU Work Auth | Remote Worldwide
@@ -1461,7 +1415,7 @@ PROJECTS
 
 EXPERIENCE
 
-Hardware Repair Technician (Self-Employed) | 2018–Present
+Hardware Repair Technician (Self-Employed) | 2018-Present
 - Client device repair: 65+ units across HP, Dell, ASUS, iPhone, Android
 - Component-level diagnosis and microsoldering
 - 97%+ overall success rate
@@ -1489,13 +1443,13 @@ Salary: EUR 25-35K base (EU/remote), negotiable for on-site/relocation
 <footer>
   <p style="margin-bottom:.4rem">
     Αινείας Γιαννακούλιας · Aineas Giannakoulias ·
-    <a href="/cdn-cgi/l/email-protection#d2b3bbbcb7b3a1b592a2a0bda6bdbcfcbfb7"><span class="__cf_email__" data-cfemail="a9c8c0c7ccc8dacee9d9dbc6ddc6c787c4cc">[email&#160;protected]</span></a> ·
+    <a href="mailto:aineasg@gmail.com">aineasg@gmail.com</a> ·
     <a href="https://github.com/Aineasg" target="_blank" rel="noopener">GitHub</a>
   </p>
   <p>Built by hand. No templates. No frameworks. Just a text editor and bad opinions about Ubuntu.</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 /* ===== CURSOR ===== */
 const cursor = document.getElementById('cursor');
 const ring   = document.getElementById('cursor-ring');
@@ -1563,7 +1517,6 @@ function drawGrid() {
   for (let y = 0; y < canvas.height; y += spacing) {
     ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke();
   }
-  // dots at intersections
   ctx.fillStyle = 'rgba(74,90,114,0.5)';
   for (let x = 0; x < canvas.width; x += spacing) {
     for (let y = 0; y < canvas.height; y += spacing) {
@@ -1572,7 +1525,6 @@ function drawGrid() {
   }
 }
 
-// animated particles on the grid
 const particles = Array.from({length: 18}, () => ({
   x: Math.random() * window.innerWidth,
   y: Math.random() * window.innerHeight,
@@ -1645,23 +1597,19 @@ skillsData.forEach((s, i) => {
   observer.observe(div);
 });
 
-// animate skill bars when visible
 const barObserver = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
       const fill = e.target.querySelector('.skill-fill');
-      if (fill) {
-        setTimeout(() => { fill.style.width = fill.dataset.pct + '%'; }, 200);
-      }
+      if (fill) setTimeout(() => { fill.style.width = fill.dataset.pct + '%'; }, 200);
     }
   });
 }, { threshold: 0.3 });
 document.querySelectorAll('.skill-item').forEach(el => barObserver.observe(el));
 
-/* ===== FLIP CARDS TOUCH (mobile) ===== */
+/* ===== FLIP CARDS TOUCH ===== */
 document.querySelectorAll('.flip-card').forEach(card => {
   card.addEventListener('click', () => {
-    // On desktop hover works; on mobile click toggles
     if (window.matchMedia('(hover: none)').matches) {
       card.classList.toggle('flipped');
     }
@@ -1693,7 +1641,8 @@ if (window.matchMedia('(hover: none)').matches) {
 
 /* ===== ATS DOWNLOAD ===== */
 document.getElementById('download-ats').addEventListener('click', () => {
-  const text = document.getElementById('ats-content').innerText;  const blob = new Blob([text], { type: 'text/plain' });
+  const text = document.getElementById('ats-content').innerText;
+  const blob = new Blob([text], { type: 'text/plain' });
   const url  = URL.createObjectURL(blob);
   const a    = document.createElement('a');
   a.href     = url;
