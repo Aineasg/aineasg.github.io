@@ -287,7 +287,34 @@
     .flip-card-inner{transition:none;}
   }
 
-  #ats-content{display:none;}
+  /* ============ PRINT ============ */
+  @media print{
+    #boot,nav,.mobile-menu,.skip-link,.nav-hamburger,.scroll-hint,.hero-cta,
+    .divider,.card-hint,.boot-skip{display:none !important;}
+    html,html.booting{overflow:visible !important;}
+    body{background:#fff !important;background-image:none !important;color:#000;font-size:10.5pt;}
+    .js .reveal,.js #hero > *{opacity:1 !important;transform:none !important;animation:none !important;}
+    section{padding:1rem 0 !important;max-width:100% !important;page-break-inside:auto;}
+    #hero{min-height:auto !important;padding:0 0 .8rem !important;}
+    .hero-name{font-size:2rem;}
+    .hero-sub{font-size:1rem;}
+    h2,.section-title{page-break-after:avoid;}
+    /* Unflip the cards: print both faces stacked so nothing is hidden on paper */
+    .cards-grid,.two-col,.learning-grid,.contact-grid,.project-features{display:block !important;}
+    .flip-card{height:auto !important;page-break-inside:avoid;margin-bottom:.8rem;}
+    .flip-card-inner{display:block !important;transform:none !important;transition:none !important;}
+    .flip-front,.flip-back{position:relative !important;inset:auto !important;
+      transform:none !important;backface-visibility:visible !important;-webkit-backface-visibility:visible !important;
+      border:1px solid #bbb !important;background:#fff !important;padding:.9rem !important;
+      page-break-inside:avoid;overflow:visible !important;}
+    .panel,.project-card,.learn-card,.manifesto-box{page-break-inside:avoid;background:#fff !important;
+      border:1px solid #bbb !important;margin-bottom:.8rem;}
+    .contact-terminal{background:#fff !important;border:1px solid #bbb !important;}
+    .terminal-header{background:#eee !important;}
+    .t-val,.t-val a,.terminal-name,.t-val.ok{color:#000 !important;}
+    .badge{border-color:#bbb !important;background:none !important;color:#000 !important;}
+    a{color:#000 !important;text-decoration:none;}
+  }
 </style>
 </head>
 <body>
@@ -618,10 +645,10 @@
 <section id="positioning">
   <div class="net-label reveal"><span class="via" aria-hidden="true"></span><span>NET.WORK-STYLE</span></div>
   <h2 class="section-title reveal">Where I Fit</h2>
-  <p class="section-desc reveal">Infrastructure and hardware over end-user hand-holding. Here's the honest picture of where I add the most value.</p>
+  <p class="section-desc reveal">Infrastructure and hardware is where I add the most value. Here's the honest picture.</p>
 
   <div class="manifesto-box reveal">
-    <p class="manifesto-text">Give me clear objectives and space to work, and I'll keep systems running while documenting everything so the next person understands it. <strong>I don't explain where the Windows key is — I harden the endpoint so that ticket never gets raised.</strong></p>
+    <p class="manifesto-text">Give me clear objectives and space to work, and I'll keep systems running while documenting everything so the next person understands it. <strong>I work the infrastructure side: harden the endpoint, fix the hardware, close the gap that generated the ticket in the first place.</strong></p>
   </div>
 
   <div class="cards-grid">
@@ -698,7 +725,7 @@
 <section id="contact">
   <div class="net-label reveal"><span class="via" aria-hidden="true"></span><span>NET.CONTACT</span></div>
   <h2 class="section-title reveal">Let's Work Together</h2>
-  <p class="section-desc reveal">If you have a role where keeping machines alive matters more than keeping users happy — reach out.</p>
+  <p class="section-desc reveal">If you have a role where keeping machines alive is the job — reach out.</p>
 
   <div class="contact-grid">
     <div class="reveal">
@@ -719,7 +746,6 @@
       <div class="contact-ctas">
         <a class="btn btn-copper" href="mailto:aineasg@gmail.com">Send email</a>
         <a class="btn btn-ghost" href="https://github.com/Aineasg" target="_blank" rel="noopener">GitHub profile ↗</a>
-        <button type="button" class="btn btn-ghost" id="download-ats">Download plain-text CV ⬇</button>
       </div>
     </div>
 
@@ -739,80 +765,6 @@
   </div>
 </section>
 </main>
-
-<div id="ats-content">
-AINEIAS GIANNAKOULIAS
-Hardware Repair Technician | Linux Systems Administrator
-
-CONTACT
-Email: aineasg@gmail.com
-GitHub: github.com/Aineasg
-LinkedIn: linkedin.com/in/aineas-giannakoulias-ab7a10301
-Location: Lechaina, Greece | EU Work Auth | Remote Worldwide
-
-SUMMARY
-Self-taught hardware repair technician and Linux systems administrator with hands-on, component-level experience across laptops, desktops, and phones. Core expertise: motherboard-level diagnosis and repair, BIOS and Embedded Controller firmware reverse-engineering, Linux system administration (CachyOS, Arch, Manjaro), containerisation (Docker, QEMU/KVM), and local AI deployment (Ollama). Published an open-source firmware controller on GitHub. Currently studying for the CCNA certification and in semester 3 of a 5-semester SAEK vocational training program (Network and Telecommunications Technician) in Greece. Available for hardware-focused or infrastructure roles, remote worldwide or on-site.
-
-TECHNICAL SKILLS
-
-Hardware and Repair
-- Laptop repair: screen, hinge, DC jack, thermal system, board-level diagnosis
-- Microsoldering: KSGER T12 station, SMD component and connector replacement
-- EEPROM: CH341A programmer for BIOS flash, recovery, and modification
-- Embedded Controller firmware reverse-engineering (Tongfang/Aistone hardware)
-- Custom desktop builds: AMD/Intel, BIOS/UEFI tuning, stress testing
-- Mobile repair: iPhone and Android screen, battery, charging port replacement
-- Diagnostics: multimeter, ESD-safe workflow, precision toolkit
-
-Linux and Infrastructure
-- Distributions: CachyOS (current), Arch, Manjaro, Ubuntu, Mint
-- Virtualisation: QEMU/KVM, WSL, nested VM setups
-- Containers: Docker, including networking and troubleshooting
-- Services: game server hosting, VPS deployment and hardening
-- AI/ML: Ollama, local LLM deployment with no cloud dependency
-- Networking: VPN routing, iptables, network namespaces (CCNA in progress)
-
-Windows
-- ISO customisation and bloat removal (ntlite)
-- WSL administration
-- Registry editing, driver management, BSOD analysis
-
-PROJECTS
-
-1. Tongfang Control Centre (github.com/Aineasg/Tongfang-Control-center-improved)
-   Reverse-engineered Embedded Controller protocol on Tongfang/Aistone laptops.
-   Open-source replacement for proprietary OEM control software.
-   Features: per-key RGB control, custom fan curves, power profile switching (in progress).
-   Stack: Python, ACPI analysis, direct EC register communication.
-   Status: Active development, open source on GitHub.
-
-2. Local AI Infrastructure
-   Self-hosted LLM deployment via Ollama, integrated into daily workflow.
-   Runs entirely locally — no cloud dependency, no API cost.
-
-EXPERIENCE
-
-Hardware Repair Technician (Self-Employed)
-- Component-level repair across laptops (HP, Dell, ASUS), phones (iPhone, Android), and desktops
-- Motherboard-level diagnosis and microsoldering
-- Custom desktop builds and Linux/Windows system setup
-- Word-of-mouth client base, Lechaina, Greece
-
-EDUCATION AND DEVELOPMENT
-- SAEK vocational training institute, Greece — Network and Telecommunications Technician program, currently in semester 3 of 5
-- Studying for CCNA (Cisco Certified Network Associate)
-- Self-taught: hardware repair, Linux administration, embedded firmware
-
-SOFT SKILLS
-Independent worker. Deep-focus specialist. Documents work clearly. Comfortable in
-high-autonomy, low-supervision environments.
-
-AVAILABILITY
-Remote (worldwide): Immediate
-On-site Greece: Immediate
-Relocation: Open to discussion
-Languages: English (native), Greek (fluent)
-</div>
 
 <footer>
   <p>Αινείας Γιαννακούλιας · Aineias Giannakoulias · <a href="mailto:aineasg@gmail.com">aineasg@gmail.com</a> · <a href="https://github.com/Aineasg" target="_blank" rel="noopener">GitHub</a></p>
@@ -1032,28 +984,6 @@ Languages: English (native), Greek (fluent)
     });
   }
 
-  /* =====================================================================
-     PLAIN-TEXT CV DOWNLOAD
-     ===================================================================== */
-  var dl = document.getElementById('download-ats');
-  var ats = document.getElementById('ats-content');
-
-  if (dl && ats) {
-    dl.addEventListener('click', function () {
-      // textContent, not innerText: the node is display:none, where innerText
-      // is unreliable and can collapse the line breaks.
-      var text = ats.textContent.trim().replace(/\r\n/g, '\n');
-      var blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
-      var url = URL.createObjectURL(blob);
-      var a = document.createElement('a');
-      a.href = url;
-      a.download = 'Aineias_Giannakoulias_CV.txt';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
-    });
-  }
 })();
 </script>
 </body>
