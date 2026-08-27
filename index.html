@@ -3,17 +3,59 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Aineias Giannakoulias — Hardware Repair Technician &amp; Linux Systems</title>
-<meta name="description" content="Aineias Giannakoulias: self-taught hardware repair technician and Linux systems specialist based in Greece. Motherboard-level repair, BIOS/EC firmware work, Linux administration. Currently studying for CCNA, SAEK student — semester 3 of 5. Available worldwide." />
+<title>Aineias Giannakoulias — Network &amp; Telecommunications Technician in Training</title>
+<meta name="description" content="Aineias Giannakoulias: Networks &amp; Telecommunications student at SAEK Pyrgos (semester 3 of 5), studying for the Cisco CCNA 200-301. Hands-on background in component-level hardware repair and Linux system administration. Based in Western Greece; open to relocation within the EU." />
 <link rel="canonical" href="https://aineasg.github.io/" />
-<meta property="og:title" content="Aineias Giannakoulias — Hardware Repair Technician & Linux Systems" />
-<meta property="og:description" content="Motherboard-level hardware repair. BIOS/EC firmware reverse-engineering. Linux systems administration. CCNA in progress." />
-<meta property="og:type" content="website" />
+<meta property="og:title" content="Aineias Giannakoulias — Network &amp; Telecommunications Technician in Training" />
+<meta property="og:description" content="Networks &amp; Telecommunications student (SAEK Pyrgos, semester 3 of 5), studying for the Cisco CCNA. Hands-on hardware repair and Linux administration. Western Greece — open to EU relocation." />
+<meta property="og:type" content="profile" />
+<meta property="og:url" content="https://aineasg.github.io/" />
 <meta name="theme-color" content="#EDF2F0" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<!-- Structured data: helps recruiters and search engines connect this page to the same person on LinkedIn and GitHub -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aineias Giannakoulias",
+  "alternateName": ["Αινείας Γιαννακούλιας"],
+  "jobTitle": "Network & Telecommunications Technician (in training)",
+  "url": "https://aineasg.github.io/",
+  "email": "mailto:aineasg@gmail.com",
+  "description": "Networks & Telecommunications student at SAEK Pyrgos, studying for the Cisco CCNA 200-301, with a hands-on background in component-level hardware repair and Linux system administration.",
+  "knowsLanguage": ["en", "el"],
+  "knowsAbout": [
+    "Computer networking",
+    "TCP/IP",
+    "Routing and switching",
+    "IPv4 and IPv6 addressing",
+    "Cisco Packet Tracer",
+    "Structured cabling",
+    "Linux system administration",
+    "Component-level hardware repair",
+    "BIOS and embedded controller firmware",
+    "OpenWRT",
+    "Docker and KVM/QEMU virtualisation"
+  ],
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "SAEK Pyrgos — Public Vocational Training Institute (Networks & Telecommunications)"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Western Greece",
+    "addressCountry": "GR"
+  },
+  "sameAs": [
+    "https://github.com/Aineasg",
+    "https://www.linkedin.com/in/aineas-giannakoulias-ab7a10301/"
+  ]
+}
+</script>
 
 <!--
   Decides BEFORE first paint whether the boot screen runs.
@@ -85,7 +127,7 @@
   .boot-bar{background:#101915;padding:.7rem 1rem;display:flex;align-items:center;gap:.6rem;border-bottom:1px solid #1c2825;}
   .boot-bar .win-btn{width:9px;height:9px;border-radius:50%;}
   .boot-bar .name{font-size:.68rem;color:#5A6B65;margin-left:.5rem;}
-  .boot-body{padding:1.3rem 1.4rem 1.5rem;min-height:16rem;}
+  .boot-body{padding:1.3rem 1.4rem 1.5rem;min-height:14rem;}
   #boot-log{font-size:.78rem;line-height:1.85;color:#A9C4B9;word-break:break-word;}
   #boot-log .line{display:block;}
   .t-ok,.t-ready{color:#6FCF9E;}
@@ -116,7 +158,7 @@
   .hero-tag{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--copper);margin-bottom:1.6rem;}
   .hero-name{font-family:var(--display);font-size:clamp(2.6rem,7vw,5rem);font-weight:700;line-height:1.02;letter-spacing:-.03em;color:var(--bright);margin-bottom:.8rem;}
   .hero-name .accent{color:var(--circuit);}
-  .hero-sub{font-family:var(--display);font-size:clamp(1rem,2.3vw,1.3rem);color:var(--muted);font-weight:500;margin-bottom:2.2rem;max-width:560px;}
+  .hero-sub{font-family:var(--display);font-size:clamp(1rem,2.3vw,1.3rem);color:var(--muted);font-weight:500;margin-bottom:2.2rem;max-width:600px;}
   .chip-row{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:2.4rem;}
   .chip{font-family:var(--mono);font-size:.7rem;color:var(--ink);background:var(--card);border:1px solid var(--border);padding:.45rem .9rem;border-radius:3px;letter-spacing:.02em;}
   .hero-cta{display:flex;gap:.7rem;flex-wrap:wrap;}
@@ -142,11 +184,11 @@
   .net-label .via{width:9px;height:9px;border-radius:50%;background:var(--paper);border:2px solid var(--circuit);flex-shrink:0;}
   .net-label span{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--circuit);}
   .section-title{font-family:var(--display);font-weight:700;font-size:clamp(1.7rem,3.6vw,2.5rem);color:var(--bright);letter-spacing:-.02em;margin-bottom:1rem;line-height:1.1;}
-  .section-desc{color:var(--muted);max-width:600px;font-size:.92rem;margin-bottom:2.6rem;line-height:1.8;}
+  .section-desc{color:var(--muted);max-width:640px;font-size:.92rem;margin-bottom:2.6rem;line-height:1.8;}
 
   /* ============ CARDS ============ */
   .cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.2rem;}
-  .flip-card{height:290px;perspective:1200px;cursor:pointer;border-radius:6px;}
+  .flip-card{height:300px;perspective:1200px;cursor:pointer;border-radius:6px;}
   .flip-card-inner{position:relative;width:100%;height:100%;transition:transform .5s cubic-bezier(.4,.2,.2,1);transform-style:preserve-3d;}
   .flip-card:hover .flip-card-inner,
   .flip-card:focus-visible .flip-card-inner,
@@ -257,7 +299,7 @@
     .nav-status .nav-status-text{display:none;}
     section{padding:3.5rem 1.2rem;}
     #hero{padding:5.5rem 1.2rem 2.5rem;}
-    .boot-body{padding:1rem 1.1rem 1.2rem;min-height:14.5rem;}
+    .boot-body{padding:1rem 1.1rem 1.2rem;min-height:13rem;}
     #boot-log{font-size:.66rem;line-height:1.8;}
     .cards-grid{grid-template-columns:1fr;}
     /* Both faces share one grid cell so the card grows to fit the taller face */
@@ -289,7 +331,7 @@
 
   /* ============ PRINT ============ */
   @media print{
-    #boot,nav,.mobile-menu,.skip-link,.nav-hamburger,.scroll-hint,.hero-cta,
+    #boot,nav,.mobile-menu,.skip-link,.nav-hamburger,.scroll-hint,.hero-cta,.contact-ctas,
     .divider,.card-hint,.boot-skip{display:none !important;}
     html,html.booting{overflow:visible !important;}
     body{background:#fff !important;background-image:none !important;color:#000;font-size:10.5pt;}
@@ -339,41 +381,43 @@
 <nav>
   <a class="nav-brand" href="#hero"><span class="dot" aria-hidden="true"></span>Aineias Giannakoulias</a>
   <ul class="nav-links">
+    <li><a href="#networking">Networking</a></li>
     <li><a href="#hardware">Repair</a></li>
     <li><a href="#linux">Systems</a></li>
     <li><a href="#project">Project</a></li>
-    <li><a href="#learning">Learning</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <div class="nav-status"><span class="status-dot" aria-hidden="true"></span><span class="nav-status-text">Available for hire</span></div>
+  <div class="nav-status"><span class="status-dot" aria-hidden="true"></span><span class="nav-status-text">Open to work</span></div>
   <button class="nav-hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
 </nav>
 
 <div class="mobile-menu" id="mobile-menu">
+  <a href="#networking" class="mobile-nav-link">Networking</a>
   <a href="#hardware" class="mobile-nav-link">Repair</a>
   <a href="#linux" class="mobile-nav-link">Systems</a>
   <a href="#project" class="mobile-nav-link">Project</a>
-  <a href="#learning" class="mobile-nav-link">Learning</a>
   <a href="#contact" class="mobile-nav-link">Contact</a>
 </div>
 
 <main id="main">
 <section id="hero">
-  <p class="hero-tag">Hardware Repair Technician · Linux Systems · Embedded Firmware</p>
+  <p class="hero-tag">Networks &amp; Telecommunications · Hardware Repair · Linux Systems</p>
   <h1 class="hero-name">Aineias<br /><span class="accent">Giannakoulias</span></h1>
-  <p class="hero-sub">I fix what others give up on — down to the component level, then document it so it stays fixed.</p>
+  <p class="hero-sub">In my third semester of the Networks &amp; Telecommunications programme at SAEK Pyrgos, studying for the Cisco CCNA 200-301 — with a working background in component-level hardware repair and Linux administration.</p>
 
   <div class="chip-row">
-    <span class="chip">Laptop &amp; Desktop Repair</span>
-    <span class="chip">Motherboard-Level Diagnostics</span>
+    <span class="chip">Routing &amp; Switching (CCNA)</span>
+    <span class="chip">Cisco Packet Tracer</span>
+    <span class="chip">Structured Cabling</span>
+    <span class="chip">Component-Level Repair</span>
     <span class="chip">Linux Administration</span>
     <span class="chip">BIOS / EC Firmware</span>
-    <span class="chip">Networking — CCNA in progress</span>
   </div>
 
   <div class="hero-cta">
-    <a class="btn btn-copper" href="#hardware">See what I fix</a>
+    <a class="btn btn-copper" href="#networking">See my work</a>
     <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    <button type="button" class="btn btn-ghost" id="print-cv">Print / Save as PDF</button>
   </div>
 
   <p class="scroll-hint">Scroll to explore <span class="scroll-arrow" aria-hidden="true">↓</span></p>
@@ -381,143 +425,238 @@
 
 <div class="divider"></div>
 
+<section id="networking">
+  <div class="net-label reveal"><span class="via" aria-hidden="true"></span><span>NET.NETWORKS-TELECOM</span></div>
+  <h2 class="section-title reveal">Networks &amp; Telecommunications</h2>
+  <p class="section-desc reveal">My main study track. Formal vocational training in network design and telecom infrastructure, structured lab work in Cisco Packet Tracer, and a Cisco CCNA 200-301 in progress. Below is where I actually am — no more, no less.</p>
+
+  <div class="cards-grid">
+    <div class="flip-card reveal reveal-delay-1" tabindex="0" role="button" aria-label="CCNA 200-301 — show topics">
+      <div class="flip-card-inner">
+        <div class="flip-front">
+          <div class="card-icon" aria-hidden="true">🎓</div>
+          <div class="card-subtitle">In progress</div>
+          <div class="card-title">Cisco CCNA 200-301</div>
+          <p class="card-desc">Working through the current CCNA blueprint alongside my SAEK coursework — routing, switching, IP services and network fundamentals, with hands-on labs for each topic.</p>
+          <p class="card-hint">Hover for topics</p>
+        </div>
+        <div class="flip-back">
+          <div class="back-title">On the CCNA 200-301 blueprint</div>
+          <ul class="back-list">
+            <li>Network fundamentals — cabling, OSI / TCP-IP, IPv4 &amp; IPv6 addressing</li>
+            <li>IP connectivity — routing concepts, static and dynamic routing</li>
+            <li>Switching — VLANs, trunking, spanning tree</li>
+            <li>IP services — DHCP, DNS, NAT, NTP</li>
+            <li>Security fundamentals — ACLs, port security, wireless</li>
+            <li>Automation and programmability basics</li>
+          </ul>
+          <p class="card-note">Currently working through the <b>network-fundamentals and IP addressing</b> material.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card reveal reveal-delay-2" tabindex="0" role="button" aria-label="SAEK Pyrgos programme — show curriculum">
+      <div class="flip-card-inner">
+        <div class="flip-front">
+          <div class="card-icon" aria-hidden="true">🏫</div>
+          <div class="card-subtitle">Semester 3 of 5</div>
+          <div class="card-title">SAEK Pyrgos — Networks &amp; Telecommunications</div>
+          <p class="card-desc">Level 5 public vocational programme (EU-recognised). Currently in the third of five semesters; consistently ahead in the practical lab work.</p>
+          <p class="card-hint">Hover for curriculum</p>
+        </div>
+        <div class="flip-back">
+          <div class="back-title">On the curriculum</div>
+          <ul class="back-list">
+            <li>Network design and administration</li>
+            <li>Structured cabling and testing</li>
+            <li>Fiber-optic and telecom infrastructure</li>
+            <li>Routing and switching</li>
+            <li>Linux and Windows server basics</li>
+            <li>IT support and helpdesk practice</li>
+          </ul>
+          <p class="card-note">Qualification completes with the <b>EOPPEP certification exams</b> — Level 5 diploma, portable across the EU.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card reveal reveal-delay-3" tabindex="0" role="button" aria-label="Packet Tracer labs — show detail">
+      <div class="flip-card-inner">
+        <div class="flip-front">
+          <div class="card-icon" aria-hidden="true">🧪</div>
+          <div class="card-subtitle">Lab work</div>
+          <div class="card-title">Cisco Packet Tracer</div>
+          <p class="card-desc">Building and configuring router and switch topologies through the CCNA lab exercises — the practical side of the coursework.</p>
+          <p class="card-hint">Hover for detail</p>
+        </div>
+        <div class="flip-back">
+          <div class="back-title">In the labs</div>
+          <ul class="back-list">
+            <li>Interface and IP addressing configuration</li>
+            <li>Building a topology and reading it back</li>
+            <li>Basic router and switch setup over the IOS CLI</li>
+            <li>Verifying with ping, traceroute and show commands</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card reveal reveal-delay-1" tabindex="0" role="button" aria-label="OpenWRT flash — show detail">
+      <div class="flip-card-inner">
+        <div class="flip-front">
+          <div class="card-icon" aria-hidden="true">📶</div>
+          <div class="card-subtitle">Hands-on with real kit</div>
+          <div class="card-title">OpenWRT Router Flash</div>
+          <p class="card-desc">Flashed OpenWRT onto a low-cost Wi-Fi extender after confirming the SoC was supported, then set it up as an access point.</p>
+          <p class="card-hint">Hover for detail</p>
+        </div>
+        <div class="flip-back">
+          <div class="back-title">Steps</div>
+          <ul class="back-list">
+            <li>Checked the chipset against the OpenWRT hardware table</li>
+            <li>Flashed the OpenWRT image over the stock firmware</li>
+            <li>Reconfigured it as an access point on my network</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <section id="hardware">
   <div class="net-label reveal"><span class="via" aria-hidden="true"></span><span>NET.HARDWARE-REPAIR</span></div>
   <h2 class="section-title reveal">Hardware Repair</h2>
-  <p class="section-desc reveal">Component-level repair on laptops, phones, and desktops. If it has a PCB, I can diagnose it down to the failing part rather than swapping the whole board.</p>
+  <p class="section-desc reveal">Self-taught, and the skill I have the most bench time in. Component-level work on laptops and desktops — I diagnose to the failing part before reaching for a replacement board, and I document the fix. The examples below are things I have actually done.</p>
 
   <div class="cards-grid">
-    <div class="flip-card reveal reveal-delay-1" tabindex="0" role="button" aria-label="Laptop repair — show detail">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">💻</div>
-          <div class="card-subtitle">Primary Specialty</div>
-          <div class="card-title">Laptop Repair</div>
-          <p class="card-desc">HP, Dell, ASUS and others — screen swaps, hinge repair, DC jack replacement, thermal paste renewal, and board-level diagnosis when the fault isn't obvious.</p>
-          <p class="card-hint">Hover for detail</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">What's covered</div>
-          <ul class="back-list">
-            <li>Screen and digitizer replacement</li>
-            <li>Hinge and chassis repair</li>
-            <li>DC jack and charging circuit repair</li>
-            <li>Thermal system rebuild (paste, pads, fans)</li>
-            <li>RAM, SSD, and storage upgrades</li>
-            <li>No-power / no-boot diagnosis</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card reveal reveal-delay-2" tabindex="0" role="button" aria-label="Precision soldering — show tools">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">🔬</div>
-          <div class="card-subtitle">Component Level</div>
-          <div class="card-title">Precision Soldering</div>
-          <p class="card-desc">KSGER T12 rework station for SMD-level board repair — replacing failed transistors, connectors, and ports rather than the whole assembly.</p>
-          <p class="card-hint">Hover for tools</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">Tools &amp; Capabilities</div>
-          <ul class="back-list">
-            <li>KSGER T12 temperature-controlled iron</li>
-            <li>SMD component replacement on laptop boards</li>
-            <li>Connector and port re-soldering</li>
-            <li>EEPROM read/write via CH341A programmer</li>
-            <li>Multimeter-based fault tracing</li>
-            <li>ESD-safe workspace, precision driver kit</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card reveal reveal-delay-3" tabindex="0" role="button" aria-label="Desktop engineering — show process">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">🖥️</div>
-          <div class="card-subtitle">Custom Builds</div>
-          <div class="card-title">Desktop Engineering</div>
-          <p class="card-desc">Custom AMD and Intel builds — part selection, BIOS/UEFI tuning, stress-testing and cable management done properly before handover.</p>
-          <p class="card-hint">Hover for process</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">Build Process</div>
-          <ul class="back-list">
-            <li>Part selection matched to workload and budget</li>
-            <li>Assembly with ESD precautions</li>
-            <li>BIOS/UEFI tuning — XMP, fan curves, boot order</li>
-            <li>Stability testing before handover</li>
-            <li>OS install: CachyOS or Windows, driver audit</li>
-            <li>Clean cable management</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card reveal reveal-delay-1" tabindex="0" role="button" aria-label="Mobile devices — show detail">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">📱</div>
-          <div class="card-subtitle">Phones &amp; Tablets</div>
-          <div class="card-title">Mobile Devices</div>
-          <p class="card-desc">iPhone and Android screen replacement, LCD and digitizer work, battery and charging port swaps.</p>
-          <p class="card-hint">Hover for detail</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">Mobile Repair Range</div>
-          <ul class="back-list">
-            <li>iPhone screen replacement</li>
-            <li>Android screens — Samsung, Xiaomi, and others</li>
-            <li>Battery and charging port replacement</li>
-            <li>Software flashing and recovery</li>
-          </ul>
-          <p class="card-note"><b>Honest note:</b> no phone-level microsoldering yet — that's board-level laptop work only, for now.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card reveal reveal-delay-2" tabindex="0" role="button" aria-label="Firmware and EC work — show detail">
+    <div class="flip-card reveal reveal-delay-1" tabindex="0" role="button" aria-label="BIOS chip replacement — show detail">
       <div class="flip-card-inner">
         <div class="flip-front">
           <div class="card-icon" aria-hidden="true">🔌</div>
-          <div class="card-subtitle">BIOS · EEPROM · EC</div>
-          <div class="card-title">Firmware &amp; EC Work</div>
-          <p class="card-desc">CH341A EEPROM programmer for BIOS flash and recovery. Reverse-engineered Embedded Controller registers to unlock hardware control the manufacturer restricts.</p>
+          <div class="card-subtitle">A repair I've done</div>
+          <div class="card-title">BIOS Chip Replacement &amp; Recovery</div>
+          <p class="card-desc">Desoldered a laptop's SPI BIOS chip, reprogrammed it on an external programmer, and resoldered it — first attempt, no board damage — to recover a machine that would not POST.</p>
           <p class="card-hint">Hover for detail</p>
         </div>
         <div class="flip-back">
-          <div class="back-title">Firmware Capabilities</div>
+          <div class="back-title">What it involved</div>
           <ul class="back-list">
-            <li>BIOS chip read, write, and verify</li>
-            <li>BIOS recovery on bricked or corrupted boards</li>
-            <li>Embedded Controller protocol reverse-engineering</li>
-            <li>EC register mapping via ACPI table analysis</li>
-            <li>Fan curve and power-limit control via EC</li>
+            <li>Identifying the SPI flash package and pinout</li>
+            <li>Clean desolder and resolder of an 8-pin chip</li>
+            <li>Read / write / verify on an external programmer</li>
+            <li>Sourcing a correct firmware image and reflashing</li>
+            <li>Confirming a full boot afterwards</li>
           </ul>
-          <div class="badge-row"><span class="badge">CH341A</span><span class="badge">ACPI</span><span class="badge">EC Registers</span></div>
         </div>
       </div>
     </div>
 
-    <div class="flip-card reveal reveal-delay-3" tabindex="0" role="button" aria-label="How I work — show detail">
+    <div class="flip-card reveal reveal-delay-2" tabindex="0" role="button" aria-label="Board-level fault finding — show detail">
       <div class="flip-card-inner">
         <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">🧭</div>
-          <div class="card-subtitle">Approach</div>
-          <div class="card-title">How I Work</div>
-          <p class="card-desc">No tool? Build one. No documentation? Reverse-engineer it. Diagnose the actual fault before reaching for a replacement part.</p>
+          <div class="card-icon" aria-hidden="true">🔬</div>
+          <div class="card-subtitle">Diagnosis</div>
+          <div class="card-title">Board-Level Fault Finding</div>
+          <p class="card-desc">Trace a no-power or no-boot fault to the failed component with a multimeter rather than swapping the whole board. Replace what's actually dead.</p>
           <p class="card-hint">Hover for detail</p>
         </div>
         <div class="flip-back">
-          <div class="back-title">Problem-Solving Approach</div>
+          <div class="back-title">Typical work</div>
           <ul class="back-list">
-            <li>Diagnose at component level, not just symptom level</li>
-            <li>Use AI as a tool, not a replacement for understanding</li>
-            <li>Trust what the hardware shows over what the docs say</li>
-            <li>Document the fix so the next person doesn't repeat the work</li>
+            <li>Failed capacitors and power components</li>
+            <li>DC jacks and charging-circuit repair</li>
+            <li>USB and display connector replacement</li>
+            <li>Following a rail to find where voltage drops</li>
           </ul>
+          <p class="card-note">Iron and hot-air work on connectors and chips; <b>reball / BGA rework not yet</b> — that's the next skill to build.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card reveal reveal-delay-3" tabindex="0" role="button" aria-label="Thermal and mechanical repair — show detail">
+      <div class="flip-card-inner">
+        <div class="flip-front">
+          <div class="card-icon" aria-hidden="true">🌡️</div>
+          <div class="card-subtitle">Everyday repairs</div>
+          <div class="card-title">Thermal &amp; Mechanical</div>
+          <p class="card-desc">The bread-and-butter jobs: overheating, broken hinges, cracked screens, worn keyboards, tired batteries.</p>
+          <p class="card-hint">Hover for detail</p>
+        </div>
+        <div class="flip-back">
+          <div class="back-title">Covered</div>
+          <ul class="back-list">
+            <li>Paste and thermal-pad renewal, fan replacement</li>
+            <li>Hinge and chassis repair</li>
+            <li>Screen and keyboard replacement</li>
+            <li>Battery replacement</li>
+            <li>RAM and SSD upgrades</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card reveal reveal-delay-1" tabindex="0" role="button" aria-label="Custom desktop builds — show process">
+      <div class="flip-card-inner">
+        <div class="flip-front">
+          <div class="card-icon" aria-hidden="true">🖥️</div>
+          <div class="card-subtitle">Builds</div>
+          <div class="card-title">Custom Desktop Builds</div>
+          <p class="card-desc">AMD and Intel builds — part selection to budget and workload, careful assembly, firmware setup and stability testing before handover.</p>
+          <p class="card-hint">Hover for process</p>
+        </div>
+        <div class="flip-back">
+          <div class="back-title">Process</div>
+          <ul class="back-list">
+            <li>Parts matched to the actual workload and budget</li>
+            <li>Assembly with ESD precautions</li>
+            <li>UEFI setup — memory profile, fan curves, boot order</li>
+            <li>Stability and thermal testing before handover</li>
+            <li>OS install and driver check (Linux or Windows)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card reveal reveal-delay-2" tabindex="0" role="button" aria-label="Mobile device repair — show detail">
+      <div class="flip-card-inner">
+        <div class="flip-front">
+          <div class="card-icon" aria-hidden="true">📱</div>
+          <div class="card-subtitle">Phones &amp; tablets</div>
+          <div class="card-title">Mobile Device Repair</div>
+          <p class="card-desc">Screen, digitiser, battery and charging-port replacement on phones and tablets, plus software recovery and flashing.</p>
+          <p class="card-hint">Hover for detail</p>
+        </div>
+        <div class="flip-back">
+          <div class="back-title">Range</div>
+          <ul class="back-list">
+            <li>iPhone and Android screen replacement</li>
+            <li>Battery and charging-port swaps</li>
+            <li>Software flashing and recovery</li>
+          </ul>
+          <p class="card-note"><b>Honest scope:</b> board-level microsoldering is laptop-only so far — mobile work is assembly-level.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card reveal reveal-delay-3" tabindex="0" role="button" aria-label="BIOS and EC firmware — show detail">
+      <div class="flip-card-inner">
+        <div class="flip-front">
+          <div class="card-icon" aria-hidden="true">🧩</div>
+          <div class="card-subtitle">Firmware</div>
+          <div class="card-title">BIOS &amp; EC Firmware</div>
+          <p class="card-desc">Read, write and recover BIOS flash chips. On my own laptop, I studied the Embedded Controller protocol through ACPI table analysis and built a small open-source control app — see Projects.</p>
+          <p class="card-hint">Hover for detail</p>
+        </div>
+        <div class="flip-back">
+          <div class="back-title">What I've done</div>
+          <ul class="back-list">
+            <li>BIOS chip read, write and verify</li>
+            <li>Recovery on a board that wouldn't boot</li>
+            <li>Reading ACPI tables to understand EC registers</li>
+            <li>Fan-curve and power-profile control via the EC</li>
+          </ul>
+          <div class="badge-row"><span class="badge">ACPI</span><span class="badge">Embedded Controller</span><span class="badge">SPI flash</span></div>
         </div>
       </div>
     </div>
@@ -529,7 +668,7 @@
 <section id="linux">
   <div class="net-label reveal"><span class="via" aria-hidden="true"></span><span>NET.LINUX-INFRASTRUCTURE</span></div>
   <h2 class="section-title reveal">Linux &amp; Infrastructure</h2>
-  <p class="section-desc reveal">Years of daily Linux use, from a beginner-friendly first distro to a performance-tuned rolling release — running containers, virtual machines, local AI, and self-hosted services along the way.</p>
+  <p class="section-desc reveal">Linux has been my main OS for several years. Along the way I've run containers, virtual machines, a local LLM and a handful of self-hosted services on my own hardware.</p>
 
   <div class="two-col">
     <div class="timeline reveal">
@@ -537,50 +676,50 @@
         <div class="tl-dot" aria-hidden="true"></div>
         <div class="tl-date">First distro</div>
         <div class="tl-name">Linux Mint</div>
-        <div class="tl-desc">User-friendly and approachable. It worked — that was enough to hook me.</div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot" aria-hidden="true"></div>
-        <div class="tl-date">Next</div>
-        <div class="tl-name">Ubuntu</div>
-        <div class="tl-desc">Used out of necessity for compatibility. Not a fan — moved on as soon as I could.</div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot" aria-hidden="true"></div>
-        <div class="tl-date">Daily driver for years</div>
-        <div class="tl-name">Manjaro</div>
-        <div class="tl-desc">Arch-based with sane defaults, rolling release. My first real Linux home.</div>
+        <div class="tl-desc">Approachable and it just worked — enough to get me hooked.</div>
       </div>
       <div class="tl-item">
         <div class="tl-dot" aria-hidden="true"></div>
         <div class="tl-date">Then</div>
+        <div class="tl-name">Ubuntu</div>
+        <div class="tl-desc">Used for compatibility with some tooling. Moved on when I could.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-date">Where I settled in</div>
+        <div class="tl-name">Manjaro</div>
+        <div class="tl-desc">Arch-based with sane defaults and a rolling release. My first real Linux home.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-date">Next</div>
         <div class="tl-name">Arch Linux</div>
-        <div class="tl-desc">Pure and minimal, deeply respected. GPU driver friction on my hardware pushed me onward.</div>
+        <div class="tl-desc">Minimal and hands-on. GPU driver friction on my hardware pushed me on.</div>
       </div>
       <div class="tl-item">
         <div class="tl-dot now" aria-hidden="true"></div>
         <div class="tl-date">Current</div>
         <div class="tl-name">CachyOS</div>
-        <div class="tl-desc">Arch-based and performance-tuned — the right balance of bleeding-edge and stable. Home now.</div>
+        <div class="tl-desc">Arch-based and performance-tuned — the balance I wanted between current and stable.</div>
       </div>
     </div>
 
     <div class="reveal reveal-delay-1">
       <div class="panel">
-        <div class="back-title">Infrastructure I've Run</div>
+        <div class="back-title">Infrastructure I've run at home</div>
         <ul class="back-list">
           <li>Game servers — Minecraft, Rust, SCUM</li>
-          <li>VPS deployment, hardening, and maintenance</li>
-          <li>Self-hosted media (TrueNAS / OpenMediaVault, past)</li>
-          <li>Docker containerisation and troubleshooting</li>
-          <li>QEMU/KVM virtualisation, including nested VM setups</li>
-          <li>Local AI — Ollama, running privately with no API cost</li>
+          <li>A small VPS — deployment, basic hardening, upkeep</li>
+          <li>Self-hosted storage (TrueNAS / OpenMediaVault)</li>
+          <li>Docker containers and troubleshooting</li>
+          <li>QEMU/KVM virtual machines, including nested setups</li>
+          <li>A local LLM with Ollama, kept fully offline</li>
         </ul>
       </div>
       <div class="panel">
-        <div class="back-title">The QEMU / VPN War Story</div>
-        <p class="panel-text">Ran an AI container inside QEMU alongside a local LLM on the host, with all traffic routed through a VPN kill-switch. The VPN's TUN adapter fought QEMU's virtual bridge by design — solved with manual iptables rules and custom network namespaces after a long debugging session.</p>
-        <div class="badge-row"><span class="badge">QEMU/KVM</span><span class="badge">iptables</span><span class="badge">Network namespaces</span></div>
+        <div class="back-title">Homelab: a networking problem I worked through</div>
+        <p class="panel-text">Ran an LLM in a QEMU VM with all its traffic forced through a VPN with a kill-switch. The VPN's TUN interface and QEMU's virtual bridge conflicted; I worked it out with manual iptables rules and a separate network namespace. Slow going, but it taught me more about Linux routing than any lab.</p>
+        <div class="badge-row"><span class="badge">QEMU/KVM</span><span class="badge">iptables</span><span class="badge">network namespaces</span></div>
       </div>
     </div>
   </div>
@@ -591,7 +730,7 @@
 <section id="project">
   <div class="net-label reveal"><span class="via" aria-hidden="true"></span><span>NET.OPEN-SOURCE</span></div>
   <h2 class="section-title reveal">Tongfang Control Centre</h2>
-  <p class="section-desc reveal">When the manufacturer's software is locked-down and poorly built, the fix is to reverse-engineer the firmware and write something better.</p>
+  <p class="section-desc reveal">A personal project. The stock control software for these laptops is limited, so I built a replacement.</p>
 
   <div class="project-card reveal">
     <div class="project-header">
@@ -601,41 +740,20 @@
       </div>
     </div>
     <div class="project-tags">
-      <span class="badge">BIOS Reverse Engineering</span>
+      <span class="badge">Firmware analysis</span>
       <span class="badge">Embedded Controller</span>
       <span class="badge">Open Source</span>
       <span class="badge">Rust</span>
       <span class="badge">ACPI</span>
     </div>
-    <p class="project-desc">Tongfang and Aistone laptops are niche, enthusiast-grade machines with poor official control software. I reverse-engineered the Embedded Controller firmware protocol by analysing ACPI tables and diffing EC register states, then built an open-source replacement that gives the user real control over their own hardware.</p>
+    <p class="project-desc">Tongfang and Aistone laptops are niche enthusiast machines with basic official control software. On my own hardware, I studied the Embedded Controller by reading ACPI tables and watching register values change, then built an open-source app that exposes fan curves, power profiles and keyboard backlight control. It's a personal project and still evolving — the repo shows the work.</p>
     <div class="project-features">
-      <div class="feature-line">Per-key RGB backlight control</div>
-      <div class="feature-line">Custom fan curve tuning by temperature</div>
-      <div class="feature-line">Direct EC register communication via ACPI</div>
-      <div class="feature-line">Power profile switching</div>
-      <div class="feature-line">Written in Rust, fully open source</div>
-      <div class="feature-line">Does what the OEM refused to build</div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<section id="learning">
-  <div class="net-label reveal"><span class="via" aria-hidden="true"></span><span>NET.CURRENTLY-LEARNING</span></div>
-  <h2 class="section-title reveal">Currently Studying</h2>
-  <p class="section-desc reveal">Building formal credentials on top of hands-on experience — networking fundamentals and structured vocational training.</p>
-
-  <div class="learning-grid">
-    <div class="learn-card reveal reveal-delay-1">
-      <span class="status">In Progress</span>
-      <div class="learn-title">CCNA</div>
-      <p class="learn-desc">Studying for the Cisco Certified Network Associate certification — routing, switching, and network fundamentals to formalise the networking side of infrastructure work.</p>
-    </div>
-    <div class="learn-card reveal reveal-delay-2">
-      <span class="status">Semester 3 of 5</span>
-      <div class="learn-title">SAEK</div>
-      <p class="learn-desc">Currently in semester 3 of the 5-semester SAEK Network and Telecommunications Technician program in Greece, building on self-taught hardware and systems work with structured, formal training.</p>
+      <div class="feature-line">Keyboard backlight control</div>
+      <div class="feature-line">Custom fan curves by temperature</div>
+      <div class="feature-line">EC communication via ACPI</div>
+      <div class="feature-line">Power-profile switching</div>
+      <div class="feature-line">Written in Rust, open source</div>
+      <div class="feature-line">Fills gaps in the stock software</div>
     </div>
   </div>
 </section>
@@ -645,30 +763,30 @@
 <section id="positioning">
   <div class="net-label reveal"><span class="via" aria-hidden="true"></span><span>NET.WORK-STYLE</span></div>
   <h2 class="section-title reveal">Where I Fit</h2>
-  <p class="section-desc reveal">Infrastructure and hardware is where I add the most value. Here's the honest picture.</p>
+  <p class="section-desc reveal">I'm starting out, and I know it. Here's the honest picture of what I bring and the roles I'm aiming for.</p>
 
   <div class="manifesto-box reveal">
-    <p class="manifesto-text">Give me clear objectives and space to work, and I'll keep systems running while documenting everything so the next person understands it. <strong>I work the infrastructure side: harden the endpoint, fix the hardware, close the gap that generated the ticket in the first place.</strong></p>
+    <p class="manifesto-text">Give me a clear brief and I'll work through the problem carefully, keep notes as I go, and ask when I'm not sure. <strong>I'm most useful where hardware, networking and Linux meet — the endpoint, the link between, and the box at each end.</strong></p>
   </div>
 
   <div class="cards-grid">
-    <div class="flip-card reveal" tabindex="0" role="button" aria-label="How I work best — show detail">
+    <div class="flip-card reveal" tabindex="0" role="button" aria-label="How I contribute — show detail">
       <div class="flip-card-inner">
         <div class="flip-front">
           <div class="card-icon" aria-hidden="true">⚙️</div>
-          <div class="card-subtitle">Preferred Environment</div>
-          <div class="card-title">How I Work Best</div>
-          <p class="card-desc">Small teams, async communication, clear scope. Remote-first, on-call capable.</p>
+          <div class="card-subtitle">What I bring</div>
+          <div class="card-title">How I Contribute</div>
+          <p class="card-desc">Take direction well, write things down, and dig into a problem before escalating it. Comfortable being supervised and learning a site's kit.</p>
           <p class="card-hint">Hover for detail</p>
         </div>
         <div class="flip-back">
-          <div class="back-title">Work Preferences</div>
+          <div class="back-title">In practice</div>
           <ul class="back-list">
-            <li>Small teams with clear ownership</li>
-            <li>Async communication preferred over meetings</li>
-            <li>Objectives in, results out — minimal micromanagement</li>
-            <li>Remote-friendly, any timezone</li>
-            <li>On-call available if compensated</li>
+            <li>Follow a brief and check in on progress</li>
+            <li>Document fixes and configs for the next person</li>
+            <li>Diagnose before replacing parts</li>
+            <li>Learn the site's tools and conventions</li>
+            <li>Reliable with routine work, not just the interesting jobs</li>
           </ul>
         </div>
       </div>
@@ -678,19 +796,19 @@
       <div class="flip-card-inner">
         <div class="flip-front">
           <div class="card-icon" aria-hidden="true">🎯</div>
-          <div class="card-subtitle">Target Roles</div>
-          <div class="card-title">Where I Fit</div>
-          <p class="card-desc">Hardware repair, Linux administration, IT infrastructure, embedded systems, field technician work.</p>
+          <div class="card-subtitle">Target roles</div>
+          <div class="card-title">What I'm Aiming For</div>
+          <p class="card-desc">Entry-level roles in telecommunications, networking and IT support — bench or field.</p>
           <p class="card-hint">Hover for role list</p>
         </div>
         <div class="flip-back">
-          <div class="back-title">Target Roles</div>
+          <div class="back-title">Roles</div>
           <ul class="back-list">
-            <li>Hardware Repair Technician (bench or field)</li>
-            <li>Linux Systems Administrator</li>
-            <li>IT Infrastructure Support</li>
-            <li>Embedded Systems / Firmware Technician</li>
-            <li>Network Technician (CCNA in progress)</li>
+            <li>Network / field technician (FTTH, structured cabling)</li>
+            <li>NOC or network operations trainee</li>
+            <li>IT support / helpdesk</li>
+            <li>Bench or field hardware technician</li>
+            <li>Linux systems support</li>
           </ul>
         </div>
       </div>
@@ -700,19 +818,19 @@
       <div class="flip-card-inner">
         <div class="flip-front">
           <div class="card-icon" aria-hidden="true">🌍</div>
-          <div class="card-subtitle">Availability &amp; Location</div>
-          <div class="card-title">Where I Can Go</div>
-          <p class="card-desc">Based in Greece. Remote worldwide in English or Greek. Open to relocation for the right opportunity.</p>
+          <div class="card-subtitle">Availability &amp; location</div>
+          <div class="card-title">Where I Can Work</div>
+          <p class="card-desc">Based in Western Greece. On-site or hybrid, and open to relocating within the EU for the right role.</p>
           <p class="card-hint">Hover for details</p>
         </div>
         <div class="flip-back">
-          <div class="back-title">Availability</div>
+          <div class="back-title">Details</div>
           <ul class="back-list">
-            <li>Remote worldwide — immediate</li>
-            <li>On-site Greece — immediate</li>
-            <li>Relocation — open to discussion</li>
-            <li>Languages: English (native), Greek (fluent)</li>
-            <li>Work authorisation: EU (Greek citizen)</li>
+            <li>Based in Ilia, Western Greece</li>
+            <li>On-site or hybrid — available now</li>
+            <li>Open to relocation within the EU</li>
+            <li>EU work rights (Greek citizen)</li>
+            <li>English (native), Greek (working proficiency)</li>
           </ul>
         </div>
       </div>
@@ -724,8 +842,8 @@
 
 <section id="contact">
   <div class="net-label reveal"><span class="via" aria-hidden="true"></span><span>NET.CONTACT</span></div>
-  <h2 class="section-title reveal">Let's Work Together</h2>
-  <p class="section-desc reveal">If you have a role where keeping machines alive is the job — reach out.</p>
+  <h2 class="section-title reveal">Get in Touch</h2>
+  <p class="section-desc reveal">If you have an entry-level opening in telecoms, networking or IT support, I'd like to hear about it.</p>
 
   <div class="contact-grid">
     <div class="reveal">
@@ -736,29 +854,31 @@
         </div>
         <div class="terminal-body">
           <div class="t-row"><span class="t-key">name</span><span class="t-val">Aineias Giannakoulias (Αινείας Γιαννακούλιας)</span></div>
-          <div class="t-row"><span class="t-key">location</span><span class="t-val">Greece (EU)</span></div>
+          <div class="t-row"><span class="t-key">location</span><span class="t-val">Ilia, Western Greece (EU)</span></div>
           <div class="t-row"><span class="t-key">email</span><span class="t-val"><a href="mailto:aineasg@gmail.com">aineasg@gmail.com</a></span></div>
           <div class="t-row"><span class="t-key">github</span><span class="t-val"><a href="https://github.com/Aineasg" target="_blank" rel="noopener">github.com/Aineasg</a></span></div>
           <div class="t-row"><span class="t-key">linkedin</span><span class="t-val"><a href="https://www.linkedin.com/in/aineas-giannakoulias-ab7a10301/" target="_blank" rel="noopener">in/aineas-giannakoulias</a></span></div>
-          <div class="t-row"><span class="t-key">status</span><span class="t-val ok">Available — remote worldwide</span></div>
+          <div class="t-row"><span class="t-key">status</span><span class="t-val ok">Open to work — Greece, or EU relocation</span></div>
         </div>
       </div>
       <div class="contact-ctas">
         <a class="btn btn-copper" href="mailto:aineasg@gmail.com">Send email</a>
         <a class="btn btn-ghost" href="https://github.com/Aineasg" target="_blank" rel="noopener">GitHub profile ↗</a>
+        <button type="button" class="btn btn-ghost" id="print-cv-2">Print / Save as PDF</button>
       </div>
     </div>
 
     <div class="reveal reveal-delay-1">
       <div class="panel panel-full">
-        <div class="back-title">Quick Profile</div>
+        <div class="back-title">Quick profile</div>
         <ul class="back-list">
-          <li>Self-taught hardware technician and Linux administrator</li>
-          <li>Motherboard-level laptop, desktop, and phone repair</li>
-          <li>Open-source BIOS/EC reverse-engineering project on GitHub</li>
-          <li>Currently studying for CCNA</li>
-          <li>SAEK Network &amp; Telecommunications student — semester 3 of 5, Greece</li>
-          <li>Available remote worldwide — English or Greek</li>
+          <li>Networks &amp; Telecommunications student, SAEK Pyrgos — semester 3 of 5</li>
+          <li>Studying for the Cisco CCNA 200-301</li>
+          <li>Hands-on component-level hardware repair (board-level on laptops)</li>
+          <li>Linux administration and self-hosted homelab infrastructure</li>
+          <li>Open-source BIOS/EC firmware project on GitHub</li>
+          <li>English (native), Greek (working proficiency)</li>
+          <li>Western Greece — open to relocation within the EU</li>
         </ul>
       </div>
     </div>
@@ -767,7 +887,7 @@
 </main>
 
 <footer>
-  <p>Αινείας Γιαννακούλιας · Aineias Giannakoulias · <a href="mailto:aineasg@gmail.com">aineasg@gmail.com</a> · <a href="https://github.com/Aineasg" target="_blank" rel="noopener">GitHub</a></p>
+  <p>Aineias Giannakoulias · Αινείας Γιαννακούλιας · <a href="mailto:aineasg@gmail.com">aineasg@gmail.com</a> · <a href="https://github.com/Aineasg" target="_blank" rel="noopener">GitHub</a></p>
   <p>Built by hand.</p>
 </footer>
 
@@ -784,18 +904,16 @@
   var log  = document.getElementById('boot-log');
   var fill = document.getElementById('boot-fill');
 
-  var PROMPT = 'aineas@bench:~$ ';
+  var PROMPT = 'aineias@bench:~$ ';
   var CMD    = './status.sh';
 
   var LINES = [
-    { cls: 't-ok',    tag: '[  OK  ]', text: 'Hardware diagnostics: ready' },
-    { cls: 't-ok',    tag: '[  OK  ]', text: 'Linux kernel: CachyOS' },
-    { cls: 't-ok',    tag: '[  OK  ]', text: 'EEPROM programmer: CH341A · standby' },
-    { cls: 't-warn',  tag: '[ WARN ]', text: 'Windows tolerance module: active' },
-    { cls: 't-ok',    tag: '[  OK  ]', text: 'Local LLM: Ollama · running' },
-    { cls: 't-dim',   tag: '[ INFO ]', text: 'CCNA study module: in progress' },
-    { cls: 't-dim',   tag: '[ INFO ]', text: 'SAEK program: semester 3 of 5' },
-    { cls: 't-ready', tag: '[ READY]', text: 'Accepting opportunities...' }
+    { cls: 't-ok',    tag: '[  OK  ]', text: 'Linux workstation: CachyOS' },
+    { cls: 't-ok',    tag: '[  OK  ]', text: 'Cisco Packet Tracer: routing & switching labs' },
+    { cls: 't-ok',    tag: '[  OK  ]', text: 'Component-level hardware repair: ready' },
+    { cls: 't-dim',   tag: '[ INFO ]', text: 'SAEK Networks & Telecommunications: semester 3 of 5' },
+    { cls: 't-dim',   tag: '[ INFO ]', text: 'CCNA 200-301 study: in progress' },
+    { cls: 't-ready', tag: '[ READY]', text: 'Open to work — Greece or EU' }
   ];
 
   var timers = [];
@@ -860,10 +978,10 @@
       if (i <= CMD.length) {
         promptEl.innerHTML = '<span class="t-dim">' + esc(PROMPT + CMD.slice(0, i)) + '</span><span class="caret"></span>';
         i++;
-        later(typeCmd, 45);
+        later(typeCmd, 32);
       } else {
         promptEl.innerHTML = '<span class="t-dim">' + esc(PROMPT + CMD) + '</span>';
-        later(printLines, 280);
+        later(printLines, 200);
       }
     }
 
@@ -873,10 +991,10 @@
         addLine(lineHTML(LINES[n]));
         n++;
         if (fill) fill.style.width = Math.round((n / LINES.length) * 100) + '%';
-        later(printLines, 165);
+        later(printLines, 135);
       } else {
         log.lastChild.innerHTML += ' <span class="caret"></span>';
-        later(finish, 700);
+        later(finish, 450);
       }
     }
 
@@ -886,7 +1004,7 @@
   if (root.classList.contains('booting') && boot && log) {
     document.addEventListener('keydown', finish);
     boot.addEventListener('click', finish);
-    later(function () { renderAll(); finish(); }, 8000);  // hard failsafe
+    later(function () { renderAll(); finish(); }, 4000);  // hard failsafe
     runBoot();
   } else {
     if (boot && boot.parentNode) boot.parentNode.removeChild(boot);
@@ -953,6 +1071,14 @@
     card.addEventListener('keydown', function (e) {
       if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') { e.preventDefault(); toggle(); }
     });
+  });
+
+  /* =====================================================================
+     PRINT / SAVE AS PDF
+     ===================================================================== */
+  ['print-cv', 'print-cv-2'].forEach(function (id) {
+    var b = document.getElementById(id);
+    if (b) b.addEventListener('click', function () { window.print(); });
   });
 
   /* =====================================================================
