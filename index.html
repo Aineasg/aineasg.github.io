@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Aineias Giannakoulias — Network &amp; Telecommunications Technician in Training</title>
-<meta name="description" content="Aineias Giannakoulias: Networks &amp; Telecommunications student at SAEK Pyrgos (semester 3 of 5), studying for the Cisco CCNA 200-301. Hands-on background in component-level hardware repair and Linux system administration. Based in Western Greece; open to relocation within the EU." />
+<title>Aineias Giannakoulias — Networks, Hardware Repair &amp; Linux</title>
+<meta name="description" content="Aineias Giannakoulias — Networks &amp; Telecommunications student at SAEK Pyrgos (semester 3 of 5), working toward the Cisco CCNA 200-301. Component-level hardware repair and Linux administration. Western Greece, open to relocation." />
 <link rel="canonical" href="https://aineasg.github.io/" />
-<meta property="og:title" content="Aineias Giannakoulias — Network &amp; Telecommunications Technician in Training" />
-<meta property="og:description" content="Networks &amp; Telecommunications student (SAEK Pyrgos, semester 3 of 5), studying for the Cisco CCNA. Hands-on hardware repair and Linux administration. Western Greece — open to EU relocation." />
+<meta property="og:title" content="Aineias Giannakoulias — Networks, Hardware Repair &amp; Linux" />
+<meta property="og:description" content="Networks &amp; Telecoms student, CCNA in progress. Fixes laptops down to the chip, runs Linux on everything. Open to entry-level roles." />
 <meta property="og:type" content="profile" />
 <meta property="og:url" content="https://aineasg.github.io/" />
-<meta name="theme-color" content="#EDF2F0" />
+<meta name="theme-color" content="#EDF2F0" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0E1513" media="(prefers-color-scheme: dark)" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
-<!-- Structured data: helps recruiters and search engines connect this page to the same person on LinkedIn and GitHub -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -26,43 +26,16 @@
   "jobTitle": "Network & Telecommunications Technician (in training)",
   "url": "https://aineasg.github.io/",
   "email": "mailto:aineasg@gmail.com",
-  "description": "Networks & Telecommunications student at SAEK Pyrgos, studying for the Cisco CCNA 200-301, with a hands-on background in component-level hardware repair and Linux system administration.",
+  "description": "Networks & Telecommunications student at SAEK Pyrgos, working toward the Cisco CCNA 200-301, with hands-on component-level hardware repair and Linux administration experience.",
   "knowsLanguage": ["en", "el"],
-  "knowsAbout": [
-    "Computer networking",
-    "TCP/IP",
-    "Routing and switching",
-    "IPv4 and IPv6 addressing",
-    "Cisco Packet Tracer",
-    "Structured cabling",
-    "Linux system administration",
-    "Component-level hardware repair",
-    "BIOS and embedded controller firmware",
-    "OpenWRT",
-    "Docker and KVM/QEMU virtualisation"
-  ],
-  "alumniOf": {
-    "@type": "EducationalOrganization",
-    "name": "SAEK Pyrgos — Public Vocational Training Institute (Networks & Telecommunications)"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressRegion": "Western Greece",
-    "addressCountry": "GR"
-  },
-  "sameAs": [
-    "https://github.com/Aineasg",
-    "https://www.linkedin.com/in/aineas-giannakoulias-ab7a10301/"
-  ]
+  "knowsAbout": ["Computer networking","TCP/IP","Routing and switching","IPv4 and IPv6 addressing","Cisco Packet Tracer","Structured cabling","Linux system administration","Component-level hardware repair","BIOS and embedded controller firmware","OpenWRT","Docker","QEMU/KVM","Rust"],
+  "alumniOf": {"@type": "EducationalOrganization","name": "SAEK Pyrgos — Public Vocational Training Institute (Networks & Telecommunications)"},
+  "address": {"@type": "PostalAddress","addressRegion": "Western Greece","addressCountry": "GR"},
+  "sameAs": ["https://github.com/Aineasg","https://www.linkedin.com/in/aineas-giannakoulias-ab7a10301/"]
 }
 </script>
 
-<!--
-  Decides BEFORE first paint whether the boot screen runs.
-  .js      → JS is alive, so it is safe to hide things for animation
-  .booting → boot overlay shows, page is scroll-locked behind it
-  .booted  → straight to the page (no JS, reduced motion, or already seen this session)
--->
+<!-- Decide before first paint whether the boot screen runs -->
 <script>
 (function () {
   var d = document.documentElement, skip = false;
@@ -75,296 +48,280 @@
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
   :root{
-    --paper:#EDF2F0;
-    --paper-raised:#E3EAE6;
-    --card:#F6F9F7;
-    --ink:#16211D;
-    --bright:#0B1210;
-    --border:#CBD8D2;
-    --muted:#5C6E67;
-    --steel:#7C8C86;
-    --copper:#B5652D;
-    --copper-lo:rgba(181,101,45,.10);
-    --copper-md:rgba(181,101,45,.22);
-    --circuit:#1F6F53;
-    --circuit-lo:rgba(31,111,83,.10);
-    --circuit-md:rgba(31,111,83,.24);
+    --paper:#EDF2F0; --paper-raised:#E3EAE6; --card:#F6F9F7;
+    --ink:#16211D; --bright:#0B1210; --border:#CBD8D2;
+    --muted:#55675F; --steel:#7C8C86;
+    --copper:#B5652D; --copper-hi:#9C551F; --copper-lo:rgba(181,101,45,.10); --copper-md:rgba(181,101,45,.24);
+    --circuit:#1F6F53; --circuit-lo:rgba(31,111,83,.10); --circuit-md:rgba(31,111,83,.26);
+    --term:#0B1210; --term-bar:#101915; --term-line:#1c2825; --term-text:#A9C4B9; --term-dim:#5A6B65; --term-ok:#6FCF9E;
+    --nav-bg:rgba(237,242,240,.88);
+    --dot:rgba(31,111,83,.09);
     --nav-h:64px;
-    --display:'Space Grotesk',sans-serif;
-    --body:'IBM Plex Sans',sans-serif;
-    --mono:'IBM Plex Mono',monospace;
+    --display:'Space Grotesk',sans-serif; --body:'IBM Plex Sans',sans-serif; --mono:'IBM Plex Mono',monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#0E1513; --paper-raised:#121B18; --card:#141E1B;
+      --ink:#D6E2DC; --bright:#F1F6F3; --border:#24332E;
+      --muted:#93A69E; --steel:#6E827A;
+      --copper:#DE8E52; --copper-hi:#E9A06A; --copper-lo:rgba(222,142,82,.10); --copper-md:rgba(222,142,82,.28);
+      --circuit:#55C495; --circuit-lo:rgba(85,196,149,.10); --circuit-md:rgba(85,196,149,.28);
+      --term:#080E0C; --term-bar:#0D1512; --term-line:#1A2622;
+      --nav-bg:rgba(14,21,19,.85);
+      --dot:rgba(85,196,149,.06);
+    }
   }
   html{scroll-behavior:smooth;font-size:16px;}
   html.booting{overflow:hidden;}
   body{
-    background:var(--paper);
-    color:var(--ink);
-    font-family:var(--body);
-    line-height:1.6;
-    overflow-x:hidden;
-    background-image:radial-gradient(circle at 1px 1px, rgba(31,111,83,.09) 1px, transparent 0);
-    background-size:26px 26px;
+    background:var(--paper); color:var(--ink); font-family:var(--body); line-height:1.6; overflow-x:hidden;
+    background-image:radial-gradient(circle at 1px 1px, var(--dot) 1px, transparent 0); background-size:26px 26px;
   }
   ::selection{background:var(--copper-md);}
-  ::-webkit-scrollbar{width:5px;}
-  ::-webkit-scrollbar-track{background:var(--paper);}
-  ::-webkit-scrollbar-thumb{background:var(--circuit);border-radius:3px;}
+  ::-webkit-scrollbar{width:5px;} ::-webkit-scrollbar-track{background:var(--paper);} ::-webkit-scrollbar-thumb{background:var(--circuit);border-radius:3px;}
   :focus-visible{outline:2px solid var(--copper);outline-offset:3px;border-radius:2px;}
+  a{color:inherit;}
 
-  .skip-link{position:absolute;left:-9999px;top:0;z-index:300;background:var(--bright);color:#fff;font-family:var(--mono);font-size:.72rem;padding:.6rem 1rem;border-radius:0 0 4px 0;}
+  .skip-link{position:absolute;left:-9999px;top:0;z-index:300;background:var(--term);color:#fff;font-family:var(--mono);font-size:.72rem;padding:.6rem 1rem;border-radius:0 0 4px 0;}
   .skip-link:focus{left:0;}
 
-  /* ============ BOOT SCREEN ============ */
+  /* ============ BOOT ============ */
   #boot{display:none;}
-  html.booting #boot{
-    display:flex;position:fixed;inset:0;z-index:500;
-    align-items:center;justify-content:center;
-    background:var(--bright);padding:1.5rem;
-    transition:opacity .55s ease;
-  }
+  html.booting #boot{display:flex;position:fixed;inset:0;z-index:500;align-items:center;justify-content:center;background:var(--term);padding:1.5rem;transition:opacity .45s ease;}
   html.booting #boot.done{opacity:0;pointer-events:none;}
-  .boot-window{width:100%;max-width:620px;border:1px solid #1c2825;border-radius:6px;overflow:hidden;font-family:var(--mono);}
-  .boot-bar{background:#101915;padding:.7rem 1rem;display:flex;align-items:center;gap:.6rem;border-bottom:1px solid #1c2825;}
-  .boot-bar .win-btn{width:9px;height:9px;border-radius:50%;}
-  .boot-bar .name{font-size:.68rem;color:#5A6B65;margin-left:.5rem;}
-  .boot-body{padding:1.3rem 1.4rem 1.5rem;min-height:14rem;}
-  #boot-log{font-size:.78rem;line-height:1.85;color:#A9C4B9;word-break:break-word;}
+  .term{border:1px solid var(--term-line);border-radius:8px;overflow:hidden;font-family:var(--mono);background:var(--term);}
+  .term-bar{background:var(--term-bar);padding:.7rem 1rem;display:flex;align-items:center;gap:.5rem;border-bottom:1px solid var(--term-line);}
+  .term-bar .name{font-size:.68rem;color:var(--term-dim);margin-left:.5rem;}
+  .win-btn{width:9px;height:9px;border-radius:50%;}
+  .win-btn.r{background:#B14A3C;} .win-btn.y{background:#C9823F;} .win-btn.g{background:#6FCF9E;}
+  .boot-window{width:100%;max-width:620px;}
+  .boot-body{padding:1.3rem 1.4rem 1.5rem;min-height:13rem;}
+  #boot-log{font-size:.78rem;line-height:1.85;color:var(--term-text);word-break:break-word;}
   #boot-log .line{display:block;}
-  .t-ok,.t-ready{color:#6FCF9E;}
-  .t-warn{color:var(--copper);}
-  .t-dim{color:#5A6B65;}
-  .caret{display:inline-block;width:.55em;height:1em;vertical-align:-.12em;background:#6FCF9E;animation:blink .9s step-end infinite;}
+  .t-ok{color:var(--term-ok);} .t-dim{color:var(--term-dim);}
+  .caret{display:inline-block;width:.55em;height:1em;vertical-align:-.12em;background:var(--term-ok);animation:blink .9s step-end infinite;}
   @keyframes blink{50%{opacity:0;}}
-  .boot-progress{margin-top:1.3rem;height:2px;background:#1c2825;border-radius:2px;overflow:hidden;}
-  .boot-progress i{display:block;height:100%;width:0;background:var(--circuit);transition:width .25s ease;}
+  .boot-progress{margin-top:1.2rem;height:2px;background:var(--term-line);border-radius:2px;overflow:hidden;}
+  .boot-progress i{display:block;height:100%;width:0;background:#2E9C72;transition:width .2s ease;}
   .boot-skip{margin-top:.9rem;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#3F534C;text-align:right;}
 
   /* ============ NAV ============ */
-  nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:.9rem 2rem;display:flex;align-items:center;justify-content:space-between;background:rgba(237,242,240,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
-  .nav-brand{font-family:var(--display);font-weight:700;font-size:1.1rem;color:var(--ink);text-decoration:none;letter-spacing:-.01em;display:flex;align-items:center;gap:.5rem;}
-  .nav-brand .dot{width:8px;height:8px;border-radius:50%;background:var(--circuit);box-shadow:0 0 0 3px var(--circuit-lo);flex-shrink:0;}
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;background:var(--nav-bg);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
+  .nav-brand{font-family:var(--display);font-weight:700;font-size:1.05rem;color:var(--bright);text-decoration:none;display:flex;align-items:center;gap:.55rem;}
+  .nav-brand .mono{font-family:var(--mono);font-weight:500;font-size:.75rem;color:var(--steel);}
   .nav-links{display:flex;gap:1.6rem;list-style:none;}
-  .nav-links a{font-family:var(--mono);font-size:.7rem;color:var(--muted);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;}
-  .nav-links a:hover{color:var(--copper);}
-  .nav-status{font-family:var(--mono);display:flex;align-items:center;gap:.5rem;font-size:.68rem;color:var(--circuit);letter-spacing:.03em;}
+  .nav-links a{font-family:var(--mono);font-size:.7rem;color:var(--muted);text-decoration:none;letter-spacing:.06em;text-transform:lowercase;transition:color .2s;}
+  .nav-links a:hover,.nav-links a.active{color:var(--copper);}
+  .nav-status{font-family:var(--mono);display:flex;align-items:center;gap:.5rem;font-size:.68rem;color:var(--circuit);border:1px solid var(--circuit-md);background:var(--circuit-lo);padding:.3rem .7rem;border-radius:99px;text-decoration:none;}
   .status-dot{width:6px;height:6px;background:var(--circuit);border-radius:50%;animation:pulse 2s ease infinite;flex-shrink:0;}
-  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(31,111,83,.4)}50%{box-shadow:0 0 0 6px rgba(31,111,83,0)}}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 var(--circuit-md)}50%{box-shadow:0 0 0 6px transparent}}
 
   main{position:relative;z-index:1;}
   section,#hero{scroll-margin-top:calc(var(--nav-h) + 12px);}
+  .wrap{max-width:1080px;margin:0 auto;}
 
   /* ============ HERO ============ */
-  #hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;padding:7rem 2rem 3rem;max-width:1080px;margin:0 auto;}
-  .hero-tag{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--copper);margin-bottom:1.6rem;}
-  .hero-name{font-family:var(--display);font-size:clamp(2.6rem,7vw,5rem);font-weight:700;line-height:1.02;letter-spacing:-.03em;color:var(--bright);margin-bottom:.8rem;}
+  #hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;padding:7rem 2rem 3rem;max-width:1080px;margin:0 auto;}
+  .hero-tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;color:var(--copper);margin-bottom:1.4rem;}
+  .hero-name{font-family:var(--display);font-size:clamp(2.7rem,7.5vw,5.4rem);font-weight:700;line-height:1;letter-spacing:-.035em;color:var(--bright);margin-bottom:1.3rem;}
   .hero-name .accent{color:var(--circuit);}
-  .hero-sub{font-family:var(--display);font-size:clamp(1rem,2.3vw,1.3rem);color:var(--muted);font-weight:500;margin-bottom:2.2rem;max-width:600px;}
-  .chip-row{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:2.4rem;}
-  .chip{font-family:var(--mono);font-size:.7rem;color:var(--ink);background:var(--card);border:1px solid var(--border);padding:.45rem .9rem;border-radius:3px;letter-spacing:.02em;}
+  .hero-sub{font-size:clamp(1.02rem,2.1vw,1.22rem);color:var(--muted);max-width:640px;margin-bottom:2rem;line-height:1.7;}
+  .hero-sub strong{color:var(--ink);font-weight:600;}
+  .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:8px;overflow:hidden;max-width:760px;margin-bottom:2.2rem;}
+  .stat{background:var(--card);padding:1rem 1.1rem;}
+  .stat b{display:block;font-family:var(--display);font-size:1.35rem;color:var(--bright);line-height:1.2;}
+  .stat span{font-family:var(--mono);font-size:.64rem;color:var(--muted);letter-spacing:.04em;}
   .hero-cta{display:flex;gap:.7rem;flex-wrap:wrap;}
   .scroll-hint{margin-top:2.6rem;font-family:var(--mono);font-size:.62rem;color:var(--steel);letter-spacing:.12em;text-transform:uppercase;display:flex;align-items:center;gap:.6rem;}
   .scroll-arrow{animation:bounceY 1.5s ease infinite;display:inline-block;}
   @keyframes bounceY{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
-
-  /* Hero entrance — starts only once the boot screen clears */
   @keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
   .js #hero > *{opacity:0;}
   .js.booted #hero > *{animation:fadeUp .5s ease forwards;}
-  .js.booted #hero > *:nth-child(1){animation-delay:.05s;}
-  .js.booted #hero > *:nth-child(2){animation-delay:.15s;}
-  .js.booted #hero > *:nth-child(3){animation-delay:.25s;}
-  .js.booted #hero > *:nth-child(4){animation-delay:.35s;}
-  .js.booted #hero > *:nth-child(5){animation-delay:.45s;}
-  .js.booted #hero > *:nth-child(6){animation-delay:.55s;}
+  .js.booted #hero > *:nth-child(2){animation-delay:.08s;}
+  .js.booted #hero > *:nth-child(3){animation-delay:.16s;}
+  .js.booted #hero > *:nth-child(4){animation-delay:.24s;}
+  .js.booted #hero > *:nth-child(5){animation-delay:.32s;}
+  .js.booted #hero > *:nth-child(6){animation-delay:.40s;}
+
+  /* ============ BUTTONS ============ */
+  .btn{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--mono);font-size:.74rem;font-weight:500;padding:.65rem 1.1rem;border-radius:5px;text-decoration:none;transition:background .2s,border-color .2s,color .2s,transform .15s;letter-spacing:.02em;cursor:pointer;border:1px solid transparent;}
+  .btn:active{transform:translateY(1px);}
+  .btn-copper{background:var(--copper);color:#fff;border-color:var(--copper);}
+  .btn-copper:hover{background:var(--copper-hi);border-color:var(--copper-hi);}
+  .btn-ghost{background:transparent;color:var(--circuit);border-color:var(--circuit-md);}
+  .btn-ghost:hover{background:var(--circuit-lo);}
 
   /* ============ SECTIONS ============ */
   section{padding:5.5rem 2rem;max-width:1080px;margin:0 auto;position:relative;}
-  .divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);}
-  .net-label{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem;}
-  .net-label .via{width:9px;height:9px;border-radius:50%;background:var(--paper);border:2px solid var(--circuit);flex-shrink:0;}
-  .net-label span{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--circuit);}
-  .section-title{font-family:var(--display);font-weight:700;font-size:clamp(1.7rem,3.6vw,2.5rem);color:var(--bright);letter-spacing:-.02em;margin-bottom:1rem;line-height:1.1;}
-  .section-desc{color:var(--muted);max-width:640px;font-size:.92rem;margin-bottom:2.6rem;line-height:1.8;}
+  .divider{max-width:1080px;margin:0 auto;height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);}
+  .label{display:flex;align-items:center;gap:.6rem;margin-bottom:.9rem;font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;color:var(--circuit);}
+  .label .num{color:var(--copper);}
+  .section-title{font-family:var(--display);font-weight:700;font-size:clamp(1.75rem,3.6vw,2.6rem);color:var(--bright);letter-spacing:-.025em;margin-bottom:.9rem;line-height:1.1;}
+  .section-desc{color:var(--muted);max-width:640px;font-size:.95rem;margin-bottom:2.6rem;line-height:1.8;}
+
+  /* ============ NOW STRIP ============ */
+  #now{padding-top:1rem;padding-bottom:4rem;}
+  .now-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;}
+  .now-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:1.1rem 1.2rem;}
+  .now-k{font-family:var(--mono);font-size:.64rem;color:var(--copper);letter-spacing:.06em;text-transform:uppercase;margin-bottom:.35rem;}
+  .now-v{font-size:.88rem;color:var(--ink);line-height:1.5;}
 
   /* ============ CARDS ============ */
-  .cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.2rem;}
-  .flip-card{height:300px;perspective:1200px;cursor:pointer;border-radius:6px;}
-  .flip-card-inner{position:relative;width:100%;height:100%;transition:transform .5s cubic-bezier(.4,.2,.2,1);transform-style:preserve-3d;}
-  .flip-card:hover .flip-card-inner,
-  .flip-card:focus-visible .flip-card-inner,
-  .flip-card.flipped .flip-card-inner{transform:rotateY(180deg);}
-  .flip-front,.flip-back{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:6px;border:1px solid var(--border);padding:1.8rem;display:flex;flex-direction:column;overflow:hidden;}
-  .flip-front{background:var(--card);transition:border-color .3s;}
-  .flip-card:hover .flip-front{border-color:var(--circuit);}
-  .flip-back{background:var(--paper-raised);border-color:var(--circuit);transform:rotateY(180deg);overflow-y:auto;}
-  .card-icon{font-size:1.7rem;margin-bottom:.9rem;}
-  .card-subtitle{font-family:var(--mono);font-size:.66rem;color:var(--copper);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.6rem;}
-  .card-title{font-family:var(--display);font-weight:700;font-size:1.1rem;color:var(--bright);margin-bottom:.6rem;}
-  .card-desc{font-size:.82rem;color:var(--muted);line-height:1.7;}
-  .card-hint{margin-top:auto;padding-top:1rem;font-family:var(--mono);font-size:.62rem;color:var(--steel);letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;gap:.4rem;}
-  .card-hint::before{content:'';display:inline-block;width:16px;height:1px;background:var(--steel);flex-shrink:0;}
-  .card-note{margin-top:.8rem;font-size:.72rem;color:var(--steel);border-top:1px solid var(--border);padding-top:.7rem;}
-  .card-note b{color:var(--copper);font-weight:500;}
-  .back-title{font-family:var(--display);font-weight:700;font-size:.95rem;color:var(--circuit);margin-bottom:.9rem;}
-  .back-list{list-style:none;font-size:.8rem;color:var(--ink);display:flex;flex-direction:column;gap:.45rem;}
-  .back-list li::before{content:'→ ';color:var(--copper);}
-  .badge-row{margin-top:.7rem;}
-  .badge{display:inline-block;font-family:var(--mono);font-size:.62rem;padding:.18rem .55rem;border-radius:2px;background:var(--circuit-lo);border:1px solid var(--circuit-md);color:var(--circuit);margin:.12rem .12rem 0 0;}
+  .cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.1rem;}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:1.6rem;display:flex;flex-direction:column;transition:border-color .25s,transform .25s;}
+  .card:hover{border-color:var(--circuit-md);transform:translateY(-2px);}
+  .card.feature{border-left:3px solid var(--copper);}
+  .card-top{display:flex;align-items:center;justify-content:space-between;gap:.8rem;margin-bottom:.9rem;}
+  .card-icon{font-size:1.4rem;line-height:1;}
+  .pill{font-family:var(--mono);font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;padding:.22rem .55rem;border-radius:99px;border:1px solid;white-space:nowrap;}
+  .pill.done{color:var(--circuit);border-color:var(--circuit-md);background:var(--circuit-lo);}
+  .pill.wip{color:var(--copper);border-color:var(--copper-md);background:var(--copper-lo);}
+  .card-title{font-family:var(--display);font-weight:700;font-size:1.1rem;color:var(--bright);margin-bottom:.5rem;line-height:1.3;}
+  .card-desc{font-size:.85rem;color:var(--muted);line-height:1.7;margin-bottom:1rem;}
+  .list{list-style:none;font-size:.82rem;color:var(--ink);display:flex;flex-direction:column;gap:.4rem;}
+  .list li{padding-left:1.1rem;position:relative;}
+  .list li::before{content:'→';position:absolute;left:0;color:var(--copper);}
+  .card-note{margin-top:auto;padding-top:1rem;font-size:.76rem;color:var(--muted);}
+  .card-note-inner{border-top:1px solid var(--border);padding-top:.75rem;}
+  .card-note b{color:var(--copper);font-weight:600;}
+  .badge-row{margin-top:.9rem;display:flex;flex-wrap:wrap;gap:.3rem;}
+  .badge{font-family:var(--mono);font-size:.62rem;padding:.2rem .55rem;border-radius:3px;background:var(--circuit-lo);border:1px solid var(--circuit-md);color:var(--circuit);}
 
-  /* ============ TIMELINE ============ */
+  /* ============ LINUX ============ */
+  .two-col{display:grid;grid-template-columns:1fr 1.15fr;gap:2rem;align-items:start;}
   .timeline{position:relative;padding-left:1.5rem;}
-  .timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(180deg,var(--circuit),var(--border),transparent);}
-  .tl-item{position:relative;padding:1rem 1rem 1rem 1.6rem;border-radius:6px;transition:background .2s;}
+  .timeline::before{content:'';position:absolute;left:0;top:.5rem;bottom:.5rem;width:1px;background:linear-gradient(180deg,var(--border),var(--circuit));}
+  .tl-item{position:relative;padding:.85rem 1rem .85rem 1.4rem;border-radius:6px;transition:background .2s;}
   .tl-item:hover{background:var(--card);}
-  .tl-dot{position:absolute;left:-1.6rem;width:9px;height:9px;border-radius:50%;background:var(--steel);border:2px solid var(--paper);top:1.35rem;}
+  .tl-dot{position:absolute;left:-1.6rem;width:9px;height:9px;border-radius:50%;background:var(--steel);border:2px solid var(--paper);top:1.2rem;}
   .tl-dot.now{background:var(--circuit);box-shadow:0 0 0 3px var(--circuit-lo);}
-  .tl-date{font-family:var(--mono);font-size:.64rem;color:var(--copper);letter-spacing:.08em;margin-bottom:.3rem;}
-  .tl-name{font-family:var(--display);font-weight:700;font-size:1rem;color:var(--bright);margin-bottom:.3rem;}
+  .tl-date{font-family:var(--mono);font-size:.64rem;color:var(--copper);letter-spacing:.06em;margin-bottom:.2rem;}
+  .tl-name{font-family:var(--display);font-weight:700;font-size:1rem;color:var(--bright);}
   .tl-desc{font-size:.8rem;color:var(--muted);line-height:1.6;}
-  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start;}
-  .panel{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.5rem;}
+  .panel{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:1.5rem;}
   .panel + .panel{margin-top:1rem;}
-  .panel-text{font-size:.8rem;color:var(--muted);line-height:1.7;}
+  .panel-title{font-family:var(--display);font-weight:700;font-size:1rem;color:var(--bright);margin-bottom:.8rem;}
+  .panel-text{font-size:.84rem;color:var(--muted);line-height:1.75;}
+  .panel-text + .panel-text{margin-top:.6rem;}
+  .panel-text b{color:var(--ink);font-weight:600;}
 
   /* ============ PROJECT ============ */
-  .project-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.8rem;transition:border-color .3s;}
-  .project-card:hover{border-color:var(--circuit);}
-  .project-header{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:1rem;flex-wrap:wrap;}
-  .project-title{font-family:var(--display);font-weight:700;font-size:1.2rem;color:var(--bright);}
-  .btn{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.7rem;font-weight:500;padding:.5rem 1rem;border-radius:3px;text-decoration:none;transition:background .2s,border-color .2s,color .2s;letter-spacing:.03em;cursor:pointer;}
-  .btn-copper{background:var(--copper);color:#fff;border:1px solid var(--copper);}
-  .btn-copper:hover{background:#9C551F;border-color:#9C551F;}
-  .btn-ghost{background:transparent;color:var(--circuit);border:1px solid var(--circuit-md);}
-  .btn-ghost:hover{background:var(--circuit-lo);}
-  .project-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:1rem;}
-  .project-desc{font-size:.85rem;color:var(--muted);line-height:1.8;margin-bottom:1.1rem;}
-  .project-features{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;}
-  .feature-line{font-size:.78rem;color:var(--ink);display:flex;align-items:flex-start;gap:.4rem;}
-  .feature-line::before{content:'✓';color:var(--circuit);flex-shrink:0;}
+  .project{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;}
+  .project-head{padding:1.8rem 1.8rem 1.2rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap;border-bottom:1px solid var(--border);}
+  .project-title{font-family:var(--display);font-weight:700;font-size:1.35rem;color:var(--bright);margin-bottom:.4rem;}
+  .project-sub{font-size:.86rem;color:var(--muted);}
+  .case{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));}
+  .case-col{padding:1.5rem 1.8rem;}
+  .case-col + .case-col{border-left:1px solid var(--border);}
+  .case-k{font-family:var(--mono);font-size:.66rem;color:var(--copper);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.6rem;}
+  .case-col p{font-size:.84rem;color:var(--muted);line-height:1.75;}
+  .project-foot{padding:1.1rem 1.8rem;border-top:1px solid var(--border);background:var(--paper-raised);}
 
-  /* ============ LEARNING ============ */
-  .learning-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.2rem;}
-  .learn-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.6rem;position:relative;}
-  .learn-card .status{position:absolute;top:1.2rem;right:1.2rem;font-family:var(--mono);font-size:.6rem;color:var(--copper);letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--copper-md);padding:.2rem .5rem;border-radius:2px;}
-  .learn-title{font-family:var(--display);font-weight:700;font-size:1.1rem;color:var(--bright);margin-bottom:.5rem;padding-right:6.5rem;}
-  .learn-desc{font-size:.82rem;color:var(--muted);line-height:1.7;}
+  /* ============ SKILLS ============ */
+  .skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem;}
+  .skill-col{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:1.4rem;}
+  .skill-head{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem;}
+  .meter{display:flex;gap:3px;}
+  .meter i{width:14px;height:5px;border-radius:2px;background:var(--border);}
+  .meter i.on{background:var(--circuit);}
+  .skill-head h3{font-family:var(--display);font-size:1rem;color:var(--bright);}
+  .tags{display:flex;flex-wrap:wrap;gap:.4rem;}
+  .tag{font-family:var(--mono);font-size:.7rem;color:var(--ink);background:var(--paper);border:1px solid var(--border);padding:.35rem .65rem;border-radius:4px;}
 
-  /* ============ MANIFESTO ============ */
-  .manifesto-box{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--copper);border-radius:4px;padding:2rem 2.2rem;margin-bottom:2rem;}
-  .manifesto-text{font-family:var(--display);font-weight:500;font-size:clamp(1rem,1.8vw,1.15rem);color:var(--ink);line-height:1.7;}
-  .manifesto-text strong{color:var(--copper);}
+  /* ============ FIT ============ */
+  .manifesto{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--copper);border-radius:6px;padding:1.8rem 2rem;margin-bottom:1.6rem;}
+  .manifesto p{font-family:var(--display);font-weight:500;font-size:clamp(1.02rem,1.9vw,1.2rem);color:var(--ink);line-height:1.65;}
+  .manifesto strong{color:var(--copper);font-weight:600;}
 
   /* ============ CONTACT ============ */
-  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:stretch;}
-  .contact-terminal{background:var(--bright);border:1px solid #1c2825;border-radius:6px;overflow:hidden;font-family:var(--mono);font-size:.78rem;}
-  .terminal-header{background:#101915;padding:.7rem 1rem;display:flex;align-items:center;gap:.6rem;border-bottom:1px solid #1c2825;}
-  .win-btn{width:9px;height:9px;border-radius:50%;}
-  .win-btn.r{background:#B14A3C;} .win-btn.y{background:var(--copper);} .win-btn.g{background:#6FCF9E;}
-  .terminal-name{font-size:.68rem;color:#5A6B65;margin-left:.5rem;}
-  .terminal-body{padding:1.2rem 1.4rem;}
-  .t-row{display:flex;gap:.8rem;margin-bottom:.5rem;}
-  .t-key{color:var(--copper);min-width:88px;flex-shrink:0;}
-  .t-val{color:#A9C4B9;word-break:break-word;}
-  .t-val a{color:#A9C4B9;text-decoration:none;} .t-val a:hover{color:#fff;}
-  .t-val.ok{color:#6FCF9E;}
+  .contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:2rem;align-items:stretch;}
+  .term-body{padding:1.2rem 1.4rem;font-size:.8rem;}
+  .t-row{display:flex;gap:.8rem;margin-bottom:.55rem;}
+  .t-key{color:#C9823F;min-width:88px;flex-shrink:0;}
+  .t-val{color:var(--term-text);word-break:break-word;}
+  .t-val a{color:var(--term-text);text-decoration:none;border-bottom:1px dotted #3F534C;} .t-val a:hover{color:#fff;}
+  .t-val.ok{color:var(--term-ok);}
   .contact-ctas{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1rem;}
   .panel-full{height:100%;}
 
-  footer{background:var(--paper);border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--mono);font-size:.68rem;color:var(--steel);letter-spacing:.03em;}
+  footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--mono);font-size:.68rem;color:var(--steel);}
   footer a{color:var(--muted);text-decoration:none;} footer a:hover{color:var(--copper);}
-  footer p:first-child{margin-bottom:.4rem;}
+  footer p + p{margin-top:.4rem;}
 
+  /* ============ MOBILE MENU ============ */
+  .nav-right{display:flex;align-items:center;gap:1rem;}
   .nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.4rem;z-index:200;}
   .nav-hamburger span{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;transition:transform .3s,opacity .3s;}
   .nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
   .nav-hamburger.open span:nth-child(2){opacity:0;}
   .nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-  .mobile-menu{display:none;position:fixed;inset:0;background:rgba(237,242,240,.98);backdrop-filter:blur(14px);z-index:150;flex-direction:column;align-items:center;justify-content:center;gap:1.8rem;}
+  .mobile-menu{display:none;position:fixed;inset:0;background:var(--paper);z-index:150;flex-direction:column;align-items:center;justify-content:center;gap:1.8rem;}
   .mobile-menu.open{display:flex;}
   .mobile-menu a{font-family:var(--display);font-size:1.5rem;font-weight:700;color:var(--ink);text-decoration:none;}
   .mobile-menu a:hover{color:var(--copper);}
 
-  /* ============ SCROLL REVEAL ============ */
-  .js .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease;}
+  /* ============ REVEAL ============ */
+  .js .reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease;}
   .js .reveal.visible{opacity:1;transform:none;}
-  .reveal-delay-1{transition-delay:.08s;}
-  .reveal-delay-2{transition-delay:.16s;}
-  .reveal-delay-3{transition-delay:.24s;}
+  .d1{transition-delay:.07s;} .d2{transition-delay:.14s;} .d3{transition-delay:.21s;}
 
+  .toast{position:fixed;bottom:1.5rem;left:50%;transform:translate(-50%,20px);background:var(--term);color:var(--term-ok);font-family:var(--mono);font-size:.74rem;padding:.6rem 1rem;border-radius:6px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:400;border:1px solid var(--term-line);}
+  .toast.show{opacity:1;transform:translate(-50%,0);}
+
+  @media (max-width:900px){
+    .now-grid{grid-template-columns:1fr 1fr;}
+    .skills{grid-template-columns:1fr;}
+    .case{grid-template-columns:1fr;}
+    .case-col + .case-col{border-left:none;border-top:1px solid var(--border);}
+  }
   @media (max-width:768px){
     :root{--nav-h:56px;}
-    nav{padding:.8rem 1rem;}
+    nav{padding:0 1rem;}
     .nav-links{display:none;}
     .nav-hamburger{display:flex;}
-    .nav-status .nav-status-text{display:none;}
+    .nav-status .txt{display:none;}
+    .nav-status{padding:.4rem;}
     section{padding:3.5rem 1.2rem;}
-    #hero{padding:5.5rem 1.2rem 2.5rem;}
-    .boot-body{padding:1rem 1.1rem 1.2rem;min-height:13rem;}
-    #boot-log{font-size:.66rem;line-height:1.8;}
+    #hero{padding:5.5rem 1.2rem 2.5rem;min-height:auto;}
+    .stats{grid-template-columns:1fr 1fr;}
+    .boot-body{padding:1rem 1.1rem 1.2rem;min-height:12rem;}
+    #boot-log{font-size:.66rem;}
     .cards-grid{grid-template-columns:1fr;}
-    /* Both faces share one grid cell so the card grows to fit the taller face */
-    .flip-card{height:auto;}
-    .flip-card-inner{display:grid;height:auto;transition:transform .4s ease;}
-    .flip-front,.flip-back{position:relative;inset:auto;grid-area:1/1;overflow:visible;}
-    .flip-card:hover .flip-card-inner{transform:none;}
-    .flip-card:hover .flip-front{border-color:var(--border);}
-    .flip-card.flipped .flip-card-inner{transform:rotateY(180deg);}
-    .card-hint::after{content:' (tap)';}
-    .two-col{grid-template-columns:1fr;}
-    .contact-grid{grid-template-columns:1fr;}
-    .project-features{grid-template-columns:1fr;}
-    .project-header{flex-direction:column;}
-    .t-row{flex-direction:column;gap:.15rem;}
+    .two-col,.contact-grid{grid-template-columns:1fr;}
+    .t-row{flex-direction:column;gap:.1rem;}
     .t-key{min-width:0;}
-    .learning-grid{grid-template-columns:1fr;}
-    .learn-title{padding-right:0;margin-top:1.6rem;}
-    .learn-card .status{top:1.2rem;left:1.6rem;right:auto;}
+    .project-head,.case-col,.project-foot{padding-left:1.2rem;padding-right:1.2rem;}
   }
+  @media (max-width:420px){ .now-grid{grid-template-columns:1fr;} }
 
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto;}
-    .js .reveal{opacity:1;transform:none;transition:none;}
-    .js #hero > *{opacity:1;animation:none;}
+    .js .reveal,.js #hero > *{opacity:1;transform:none;transition:none;animation:none;}
     .status-dot,.caret,.scroll-arrow{animation:none;}
-    .flip-card-inner{transition:none;}
+    .card:hover{transform:none;}
   }
 
-  /* ============ PRINT ============ */
   @media print{
-    #boot,nav,.mobile-menu,.skip-link,.nav-hamburger,.scroll-hint,.hero-cta,.contact-ctas,
-    .divider,.card-hint,.boot-skip{display:none !important;}
+    #boot,nav,.mobile-menu,.skip-link,.nav-hamburger,.scroll-hint,.hero-cta,.contact-ctas,.divider,.boot-skip,.toast,.project-foot{display:none !important;}
     html,html.booting{overflow:visible !important;}
-    body{background:#fff !important;background-image:none !important;color:#000;font-size:10.5pt;}
+    :root{--paper:#fff;--card:#fff;--paper-raised:#fff;--ink:#000;--bright:#000;--muted:#333;--border:#bbb;--term:#fff;--term-bar:#eee;--term-text:#000;--term-ok:#000;}
+    body{background:#fff !important;background-image:none !important;font-size:10.5pt;}
     .js .reveal,.js #hero > *{opacity:1 !important;transform:none !important;animation:none !important;}
-    section{padding:1rem 0 !important;max-width:100% !important;page-break-inside:auto;}
+    section{padding:.9rem 0 !important;max-width:100% !important;}
     #hero{min-height:auto !important;padding:0 0 .8rem !important;}
     .hero-name{font-size:2rem;}
-    .hero-sub{font-size:1rem;}
-    h2,.section-title{page-break-after:avoid;}
-    /* Unflip the cards: print both faces stacked so nothing is hidden on paper */
-    .cards-grid,.two-col,.learning-grid,.contact-grid,.project-features{display:block !important;}
-    .flip-card{height:auto !important;page-break-inside:avoid;margin-bottom:.8rem;}
-    .flip-card-inner{display:block !important;transform:none !important;transition:none !important;}
-    .flip-front,.flip-back{position:relative !important;inset:auto !important;
-      transform:none !important;backface-visibility:visible !important;-webkit-backface-visibility:visible !important;
-      border:1px solid #bbb !important;background:#fff !important;padding:.9rem !important;
-      page-break-inside:avoid;overflow:visible !important;}
-    .panel,.project-card,.learn-card,.manifesto-box{page-break-inside:avoid;background:#fff !important;
-      border:1px solid #bbb !important;margin-bottom:.8rem;}
-    .contact-terminal{background:#fff !important;border:1px solid #bbb !important;}
-    .terminal-header{background:#eee !important;}
-    .t-val,.t-val a,.terminal-name,.t-val.ok{color:#000 !important;}
-    .badge{border-color:#bbb !important;background:none !important;color:#000 !important;}
+    .section-title{page-break-after:avoid;font-size:1.4rem;}
+    .card,.panel,.project,.skill-col,.manifesto,.now-item{page-break-inside:avoid;}
     a{color:#000 !important;text-decoration:none;}
   }
 </style>
 </head>
 <body>
 
-<!-- Boot screen: only rendered while html.booting, then removed from the DOM -->
 <div id="boot" role="status" aria-live="polite" aria-label="Loading">
-  <div class="boot-window">
-    <div class="boot-bar">
+  <div class="term boot-window">
+    <div class="term-bar">
       <div class="win-btn r"></div><div class="win-btn y"></div><div class="win-btn g"></div>
       <span class="name">status.sh</span>
     </div>
@@ -379,347 +336,254 @@
 <a class="skip-link" href="#main">Skip to content</a>
 
 <nav>
-  <a class="nav-brand" href="#hero"><span class="dot" aria-hidden="true"></span>Aineias Giannakoulias</a>
+  <a class="nav-brand" href="#hero">Aineias G. <span class="mono">~/portfolio</span></a>
   <ul class="nav-links">
-    <li><a href="#networking">Networking</a></li>
-    <li><a href="#hardware">Repair</a></li>
-    <li><a href="#linux">Systems</a></li>
-    <li><a href="#project">Project</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#networking">networking</a></li>
+    <li><a href="#hardware">repair</a></li>
+    <li><a href="#linux">linux</a></li>
+    <li><a href="#project">projects</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#contact">contact</a></li>
   </ul>
-  <div class="nav-status"><span class="status-dot" aria-hidden="true"></span><span class="nav-status-text">Open to work</span></div>
-  <button class="nav-hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+  <div class="nav-right">
+    <a class="nav-status" href="#contact"><span class="status-dot" aria-hidden="true"></span><span class="txt">Open to work</span></a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+  </div>
 </nav>
 
 <div class="mobile-menu" id="mobile-menu">
   <a href="#networking" class="mobile-nav-link">Networking</a>
   <a href="#hardware" class="mobile-nav-link">Repair</a>
-  <a href="#linux" class="mobile-nav-link">Systems</a>
-  <a href="#project" class="mobile-nav-link">Project</a>
+  <a href="#linux" class="mobile-nav-link">Linux</a>
+  <a href="#project" class="mobile-nav-link">Projects</a>
+  <a href="#skills" class="mobile-nav-link">Skills</a>
   <a href="#contact" class="mobile-nav-link">Contact</a>
 </div>
 
 <main id="main">
-<section id="hero">
-  <p class="hero-tag">Networks &amp; Telecommunications · Hardware Repair · Linux Systems</p>
-  <h1 class="hero-name">Aineias<br /><span class="accent">Giannakoulias</span></h1>
-  <p class="hero-sub">In my third semester of the Networks &amp; Telecommunications programme at SAEK Pyrgos, studying for the Cisco CCNA 200-301 — with a working background in component-level hardware repair and Linux administration.</p>
 
-  <div class="chip-row">
-    <span class="chip">Routing &amp; Switching (CCNA)</span>
-    <span class="chip">Cisco Packet Tracer</span>
-    <span class="chip">Structured Cabling</span>
-    <span class="chip">Component-Level Repair</span>
-    <span class="chip">Linux Administration</span>
-    <span class="chip">BIOS / EC Firmware</span>
+<!-- ============ HERO ============ -->
+<section id="hero">
+  <p class="hero-tag">// networks · hardware repair · linux</p>
+  <h1 class="hero-name">Aineias<br /><span class="accent">Giannakoulias</span></h1>
+  <p class="hero-sub">Networks &amp; telecoms student who'd rather <strong>open the laptop than send it off</strong>. Semester 3 of 5 at SAEK Pyrgos, studying for the <strong>Cisco CCNA 200-301</strong>, and running Linux on basically everything I own. Next stop: <strong>network engineering in Australia</strong>.</p>
+
+  <div class="stats" role="list">
+    <div class="stat" role="listitem"><b>3 / 5</b><span>semesters at SAEK</span></div>
+    <div class="stat" role="listitem"><b>CCNA</b><span>200-301 in progress</span></div>
+    <div class="stat" role="listitem"><b>Board-level</b><span>laptop &amp; desktop repair</span></div>
+    <div class="stat" role="listitem"><b>Rust</b><span>go-to language for my tools</span></div>
   </div>
 
   <div class="hero-cta">
-    <a class="btn btn-copper" href="#networking">See my work</a>
-    <a class="btn btn-ghost" href="#contact">Get in touch</a>
-    <button type="button" class="btn btn-ghost" id="print-cv">Print / Save as PDF</button>
+    <a class="btn btn-copper" href="#contact">Hire me / get in touch</a>
+    <a class="btn btn-ghost" href="#project">See the project</a>
+    <button type="button" class="btn btn-ghost js-print">Save as PDF</button>
   </div>
 
-  <p class="scroll-hint">Scroll to explore <span class="scroll-arrow" aria-hidden="true">↓</span></p>
+  <p class="scroll-hint">Scroll <span class="scroll-arrow" aria-hidden="true">↓</span></p>
+</section>
+
+<!-- ============ NOW ============ -->
+<section id="now" aria-label="What I'm doing right now">
+  <div class="now-grid">
+    <div class="now-item reveal"><div class="now-k">Studying</div><div class="now-v">Cisco CCNA 200-301</div></div>
+    <div class="now-item reveal d1"><div class="now-k">Shipped</div><div class="now-v">Tongfang Control Centre, Minecraft Server Manager + more on GitHub</div></div>
+    <div class="now-item reveal d2"><div class="now-k">Next skill</div><div class="now-v">BGA rework &amp; reballing</div></div>
+    <div class="now-item reveal d3"><div class="now-k">Aiming for</div><div class="now-v">Network engineer in Australia — open to any solid networking/IT role on the way</div></div>
+  </div>
 </section>
 
 <div class="divider"></div>
 
+<!-- ============ NETWORKING ============ -->
 <section id="networking">
-  <div class="net-label reveal"><span class="via" aria-hidden="true"></span><span>NET.NETWORKS-TELECOM</span></div>
-  <h2 class="section-title reveal">Networks &amp; Telecommunications</h2>
-  <p class="section-desc reveal">My main study track. Formal vocational training in network design and telecom infrastructure, structured lab work in Cisco Packet Tracer, and a Cisco CCNA 200-301 in progress. Below is where I actually am — no more, no less.</p>
+  <p class="label reveal"><span class="num">01</span> networks-telecom</p>
+  <h2 class="section-title reveal">Networks &amp; Telecoms</h2>
+  <p class="section-desc reveal">The main quest. Formal vocational training, CCNA labs, and some real kit on my own network. This is exactly where I'm at — no inflated buzzwords.</p>
 
   <div class="cards-grid">
-    <div class="flip-card reveal reveal-delay-1" tabindex="0" role="button" aria-label="CCNA 200-301 — show topics">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">🎓</div>
-          <div class="card-subtitle">In progress</div>
-          <div class="card-title">Cisco CCNA 200-301</div>
-          <p class="card-desc">Working through the current CCNA blueprint alongside my SAEK coursework — routing, switching, IP services and network fundamentals, with hands-on labs for each topic.</p>
-          <p class="card-hint">Hover for topics</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">On the CCNA 200-301 blueprint</div>
-          <ul class="back-list">
-            <li>Network fundamentals — cabling, OSI / TCP-IP, IPv4 &amp; IPv6 addressing</li>
-            <li>IP connectivity — routing concepts, static and dynamic routing</li>
-            <li>Switching — VLANs, trunking, spanning tree</li>
-            <li>IP services — DHCP, DNS, NAT, NTP</li>
-            <li>Security fundamentals — ACLs, port security, wireless</li>
-            <li>Automation and programmability basics</li>
-          </ul>
-          <p class="card-note">Currently working through the <b>network-fundamentals and IP addressing</b> material.</p>
-        </div>
-      </div>
-    </div>
+    <article class="card feature reveal d1">
+      <div class="card-top"><span class="card-icon" aria-hidden="true">🎓</span><span class="pill wip">In progress</span></div>
+      <h3 class="card-title">Cisco CCNA 200-301</h3>
+      <p class="card-desc">Working through the full blueprint alongside my SAEK coursework, with a lab for every topic.</p>
+      <ul class="list">
+        <li>Network fundamentals — cabling, OSI / TCP-IP, IPv4 &amp; IPv6</li>
+        <li>IP connectivity — static and dynamic routing</li>
+        <li>Switching — VLANs, trunking, spanning tree</li>
+        <li>IP services — DHCP, DNS, NAT, NTP</li>
+        <li>Security — ACLs, port security, wireless</li>
+        <li>Automation &amp; programmability basics</li>
+      </ul>
+      <div class="card-note"><div class="card-note-inner">Currently on: <b>fundamentals &amp; IP addressing</b>.</div></div>
+    </article>
 
-    <div class="flip-card reveal reveal-delay-2" tabindex="0" role="button" aria-label="SAEK Pyrgos programme — show curriculum">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">🏫</div>
-          <div class="card-subtitle">Semester 3 of 5</div>
-          <div class="card-title">SAEK Pyrgos — Networks &amp; Telecommunications</div>
-          <p class="card-desc">Level 5 public vocational programme (EU-recognised). Currently in the third of five semesters; consistently ahead in the practical lab work.</p>
-          <p class="card-hint">Hover for curriculum</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">On the curriculum</div>
-          <ul class="back-list">
-            <li>Network design and administration</li>
-            <li>Structured cabling and testing</li>
-            <li>Fiber-optic and telecom infrastructure</li>
-            <li>Routing and switching</li>
-            <li>Linux and Windows server basics</li>
-            <li>IT support and helpdesk practice</li>
-          </ul>
-          <p class="card-note">Qualification completes with the <b>EOPPEP certification exams</b> — Level 5 diploma, portable across the EU.</p>
-        </div>
-      </div>
-    </div>
+    <article class="card reveal d2">
+      <div class="card-top"><span class="card-icon" aria-hidden="true">🏫</span><span class="pill wip">Semester 3 of 5</span></div>
+      <h3 class="card-title">SAEK Pyrgos — Networks &amp; Telecommunications</h3>
+      <p class="card-desc">EU Level 5 public vocational programme. Consistently ahead in the practical labs.</p>
+      <ul class="list">
+        <li>Network design &amp; administration</li>
+        <li>Structured cabling and testing</li>
+        <li>Fibre-optic &amp; telecom infrastructure</li>
+        <li>Routing and switching</li>
+        <li>Linux &amp; Windows server basics</li>
+        <li>IT support / helpdesk practice</li>
+      </ul>
+      <div class="card-note"><div class="card-note-inner">Finishes with the <b>EOPPEP certification exams</b> — a diploma that's recognised across the EU.</div></div>
+    </article>
 
-    <div class="flip-card reveal reveal-delay-3" tabindex="0" role="button" aria-label="Packet Tracer labs — show detail">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">🧪</div>
-          <div class="card-subtitle">Lab work</div>
-          <div class="card-title">Cisco Packet Tracer</div>
-          <p class="card-desc">Building and configuring router and switch topologies through the CCNA lab exercises — the practical side of the coursework.</p>
-          <p class="card-hint">Hover for detail</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">In the labs</div>
-          <ul class="back-list">
-            <li>Interface and IP addressing configuration</li>
-            <li>Building a topology and reading it back</li>
-            <li>Basic router and switch setup over the IOS CLI</li>
-            <li>Verifying with ping, traceroute and show commands</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <article class="card reveal d3">
+      <div class="card-top"><span class="card-icon" aria-hidden="true">🧪</span><span class="pill done">Ongoing labs</span></div>
+      <h3 class="card-title">Cisco Packet Tracer &amp; IOS</h3>
+      <p class="card-desc">Multi-device topologies built from scratch, configured on the IOS CLI, then troubleshot until every host talks to every host it should — and none it shouldn't.</p>
+      <ul class="list">
+        <li>IPv4 / IPv6 addressing and subnetting across multi-router topologies</li>
+        <li>VLANs, 802.1Q trunking and inter-VLAN routing</li>
+        <li>Static and dynamic routing, verified against the routing table</li>
+        <li>DHCP, NAT and ACLs on edge devices</li>
+        <li>Tracing a host to its switch port via the MAC address table</li>
+      </ul>
+      <div class="badge-row"><span class="badge">show mac address-table</span><span class="badge">show ip route</span><span class="badge">show vlan brief</span><span class="badge">show interfaces trunk</span><span class="badge">show ip int brief</span></div>
+    </article>
 
-    <div class="flip-card reveal reveal-delay-1" tabindex="0" role="button" aria-label="OpenWRT flash — show detail">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">📶</div>
-          <div class="card-subtitle">Hands-on with real kit</div>
-          <div class="card-title">OpenWRT Router Flash</div>
-          <p class="card-desc">Flashed OpenWRT onto a low-cost Wi-Fi extender after confirming the SoC was supported, then set it up as an access point.</p>
-          <p class="card-hint">Hover for detail</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">Steps</div>
-          <ul class="back-list">
-            <li>Checked the chipset against the OpenWRT hardware table</li>
-            <li>Flashed the OpenWRT image over the stock firmware</li>
-            <li>Reconfigured it as an access point on my network</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <article class="card reveal d1">
+      <div class="card-top"><span class="card-icon" aria-hidden="true">📶</span><span class="pill done">Done</span></div>
+      <h3 class="card-title">OpenWRT on a Cheap Extender</h3>
+      <p class="card-desc">Took a locked-down budget Wi-Fi extender and turned it into a fully configurable access point running open firmware.</p>
+      <ul class="list">
+        <li>Verified the SoC against the OpenWRT hardware table before touching it</li>
+        <li>Flashed OpenWRT over the stock firmware — no brick</li>
+        <li>Deployed it as an AP on my home network</li>
+      </ul>
+    </article>
   </div>
 </section>
 
 <div class="divider"></div>
 
+<!-- ============ HARDWARE ============ -->
 <section id="hardware">
-  <div class="net-label reveal"><span class="via" aria-hidden="true"></span><span>NET.HARDWARE-REPAIR</span></div>
+  <p class="label reveal"><span class="num">02</span> hardware-repair</p>
   <h2 class="section-title reveal">Hardware Repair</h2>
-  <p class="section-desc reveal">Self-taught, and the skill I have the most bench time in. Component-level work on laptops and desktops — I diagnose to the failing part before reaching for a replacement board, and I document the fix. The examples below are things I have actually done.</p>
+  <p class="section-desc reveal">Self-taught and where I've put in the most bench hours. I find the actual dead component instead of swapping the whole board — and I write down what fixed it. Everything here is stuff I've actually done.</p>
 
   <div class="cards-grid">
-    <div class="flip-card reveal reveal-delay-1" tabindex="0" role="button" aria-label="BIOS chip replacement — show detail">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">🔌</div>
-          <div class="card-subtitle">A repair I've done</div>
-          <div class="card-title">BIOS Chip Replacement &amp; Recovery</div>
-          <p class="card-desc">Desoldered a laptop's SPI BIOS chip, reprogrammed it on an external programmer, and resoldered it — first attempt, no board damage — to recover a machine that would not POST.</p>
-          <p class="card-hint">Hover for detail</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">What it involved</div>
-          <ul class="back-list">
-            <li>Identifying the SPI flash package and pinout</li>
-            <li>Clean desolder and resolder of an 8-pin chip</li>
-            <li>Read / write / verify on an external programmer</li>
-            <li>Sourcing a correct firmware image and reflashing</li>
-            <li>Confirming a full boot afterwards</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <article class="card feature reveal d1">
+      <div class="card-top"><span class="card-icon" aria-hidden="true">🔌</span><span class="pill done">Highlight</span></div>
+      <h3 class="card-title">BIOS Chip Swap &amp; Recovery</h3>
+      <p class="card-desc">Recovering boards that won't POST: pull the SPI flash, reprogram it on an external programmer, solder it back — clean work, no collateral board damage.</p>
+      <ul class="list">
+        <li>Identified the SPI package and pinout</li>
+        <li>Clean desolder / resolder of an 8-pin chip</li>
+        <li>Read, write &amp; verify on an external programmer</li>
+        <li>Sourced the right firmware image and reflashed</li>
+        <li>Confirmed a full boot after</li>
+      </ul>
+      <div class="badge-row"><span class="badge">SPI flash</span><span class="badge">soldering</span><span class="badge">CH341A-style programmer</span></div>
+    </article>
 
-    <div class="flip-card reveal reveal-delay-2" tabindex="0" role="button" aria-label="Board-level fault finding — show detail">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">🔬</div>
-          <div class="card-subtitle">Diagnosis</div>
-          <div class="card-title">Board-Level Fault Finding</div>
-          <p class="card-desc">Trace a no-power or no-boot fault to the failed component with a multimeter rather than swapping the whole board. Replace what's actually dead.</p>
-          <p class="card-hint">Hover for detail</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">Typical work</div>
-          <ul class="back-list">
-            <li>Failed capacitors and power components</li>
-            <li>DC jacks and charging-circuit repair</li>
-            <li>USB and display connector replacement</li>
-            <li>Following a rail to find where voltage drops</li>
-          </ul>
-          <p class="card-note">Iron and hot-air work on connectors and chips; <b>reball / BGA rework not yet</b> — that's the next skill to build.</p>
-        </div>
-      </div>
-    </div>
+    <article class="card reveal d2">
+      <div class="card-top"><span class="card-icon" aria-hidden="true">🔬</span><span class="pill done">Regular work</span></div>
+      <h3 class="card-title">Board-Level Fault Finding</h3>
+      <p class="card-desc">No power, no boot? Multimeter out, follow the rail until the voltage drops, replace what's actually dead.</p>
+      <ul class="list">
+        <li>Failed capacitors and power components</li>
+        <li>DC jacks and charging circuits</li>
+        <li>USB and display connectors</li>
+      </ul>
+      <div class="card-note"><div class="card-note-inner">Iron and hot air on connectors &amp; chips. <b>BGA rework isn't there yet</b> — it's the next thing I'm learning.</div></div>
+    </article>
 
-    <div class="flip-card reveal reveal-delay-3" tabindex="0" role="button" aria-label="Thermal and mechanical repair — show detail">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">🌡️</div>
-          <div class="card-subtitle">Everyday repairs</div>
-          <div class="card-title">Thermal &amp; Mechanical</div>
-          <p class="card-desc">The bread-and-butter jobs: overheating, broken hinges, cracked screens, worn keyboards, tired batteries.</p>
-          <p class="card-hint">Hover for detail</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">Covered</div>
-          <ul class="back-list">
-            <li>Paste and thermal-pad renewal, fan replacement</li>
-            <li>Hinge and chassis repair</li>
-            <li>Screen and keyboard replacement</li>
-            <li>Battery replacement</li>
-            <li>RAM and SSD upgrades</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <article class="card reveal d3">
+      <div class="card-top"><span class="card-icon" aria-hidden="true">🧩</span><span class="pill done">Done</span></div>
+      <h3 class="card-title">BIOS &amp; EC Firmware</h3>
+      <p class="card-desc">Reverse-engineered my own laptop's Embedded Controller from its ACPI tables, then designed a control app on top of it.</p>
+      <ul class="list">
+        <li>BIOS chip read / write / verify</li>
+        <li>Recovery on a board that wouldn't boot</li>
+        <li>Mapping EC registers from ACPI tables</li>
+        <li>Fan &amp; power control via the EC</li>
+      </ul>
+      <div class="badge-row"><span class="badge">ACPI</span><span class="badge">Embedded Controller</span></div>
+    </article>
 
-    <div class="flip-card reveal reveal-delay-1" tabindex="0" role="button" aria-label="Custom desktop builds — show process">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">🖥️</div>
-          <div class="card-subtitle">Builds</div>
-          <div class="card-title">Custom Desktop Builds</div>
-          <p class="card-desc">AMD and Intel builds — part selection to budget and workload, careful assembly, firmware setup and stability testing before handover.</p>
-          <p class="card-hint">Hover for process</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">Process</div>
-          <ul class="back-list">
-            <li>Parts matched to the actual workload and budget</li>
-            <li>Assembly with ESD precautions</li>
-            <li>UEFI setup — memory profile, fan curves, boot order</li>
-            <li>Stability and thermal testing before handover</li>
-            <li>OS install and driver check (Linux or Windows)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <article class="card reveal d1">
+      <div class="card-top"><span class="card-icon" aria-hidden="true">🌡️</span><span class="pill done">Bread &amp; butter</span></div>
+      <h3 class="card-title">Thermal &amp; Mechanical</h3>
+      <p class="card-desc">The everyday stuff that keeps machines alive.</p>
+      <ul class="list">
+        <li>Paste &amp; pad renewal, fan swaps</li>
+        <li>Hinge and chassis repair</li>
+        <li>Screen, keyboard &amp; battery replacement</li>
+        <li>RAM and SSD upgrades</li>
+      </ul>
+    </article>
 
-    <div class="flip-card reveal reveal-delay-2" tabindex="0" role="button" aria-label="Mobile device repair — show detail">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">📱</div>
-          <div class="card-subtitle">Phones &amp; tablets</div>
-          <div class="card-title">Mobile Device Repair</div>
-          <p class="card-desc">Screen, digitiser, battery and charging-port replacement on phones and tablets, plus software recovery and flashing.</p>
-          <p class="card-hint">Hover for detail</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">Range</div>
-          <ul class="back-list">
-            <li>iPhone and Android screen replacement</li>
-            <li>Battery and charging-port swaps</li>
-            <li>Software flashing and recovery</li>
-          </ul>
-          <p class="card-note"><b>Honest scope:</b> board-level microsoldering is laptop-only so far — mobile work is assembly-level.</p>
-        </div>
-      </div>
-    </div>
+    <article class="card reveal d2">
+      <div class="card-top"><span class="card-icon" aria-hidden="true">🖥️</span><span class="pill done">Done</span></div>
+      <h3 class="card-title">Custom Desktop Builds</h3>
+      <p class="card-desc">AMD and Intel builds, specced to the actual workload and budget — not just the shiniest parts.</p>
+      <ul class="list">
+        <li>Assembly with ESD precautions</li>
+        <li>UEFI setup — memory profile, fan curves, boot order</li>
+        <li>Stability &amp; thermal testing before handover</li>
+        <li>OS install and driver check (Linux or Windows)</li>
+      </ul>
+    </article>
 
-    <div class="flip-card reveal reveal-delay-3" tabindex="0" role="button" aria-label="BIOS and EC firmware — show detail">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">🧩</div>
-          <div class="card-subtitle">Firmware</div>
-          <div class="card-title">BIOS &amp; EC Firmware</div>
-          <p class="card-desc">Read, write and recover BIOS flash chips. On my own laptop, I studied the Embedded Controller protocol through ACPI table analysis and built a small open-source control app — see Projects.</p>
-          <p class="card-hint">Hover for detail</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">What I've done</div>
-          <ul class="back-list">
-            <li>BIOS chip read, write and verify</li>
-            <li>Recovery on a board that wouldn't boot</li>
-            <li>Reading ACPI tables to understand EC registers</li>
-            <li>Fan-curve and power-profile control via the EC</li>
-          </ul>
-          <div class="badge-row"><span class="badge">ACPI</span><span class="badge">Embedded Controller</span><span class="badge">SPI flash</span></div>
-        </div>
-      </div>
-    </div>
+    <article class="card reveal d3">
+      <div class="card-top"><span class="card-icon" aria-hidden="true">📱</span><span class="pill done">Assembly-level</span></div>
+      <h3 class="card-title">Phones &amp; Tablets</h3>
+      <p class="card-desc">Screens, digitisers, batteries and charging ports, plus software flashing and recovery.</p>
+      <ul class="list">
+        <li>iPhone and Android screen replacement</li>
+        <li>Battery &amp; charging-port swaps</li>
+        <li>Firmware flashing and recovery</li>
+      </ul>
+      <div class="card-note"><div class="card-note-inner"><b>Scope:</b> board-level microsoldering is on laptops &amp; desktops — phone work is assembly-level.</div></div>
+    </article>
   </div>
 </section>
 
 <div class="divider"></div>
 
+<!-- ============ LINUX ============ -->
 <section id="linux">
-  <div class="net-label reveal"><span class="via" aria-hidden="true"></span><span>NET.LINUX-INFRASTRUCTURE</span></div>
-  <h2 class="section-title reveal">Linux &amp; Infrastructure</h2>
-  <p class="section-desc reveal">Linux has been my main OS for several years. Along the way I've run containers, virtual machines, a local LLM and a handful of self-hosted services on my own hardware.</p>
+  <p class="label reveal"><span class="num">03</span> linux-homelab</p>
+  <h2 class="section-title reveal">Linux &amp; Homelab</h2>
+  <p class="section-desc reveal">Linux has been my daily driver for years. The homelab is where I break things on purpose, so I already know how to fix them when it counts.</p>
 
   <div class="two-col">
-    <div class="timeline reveal">
-      <div class="tl-item">
-        <div class="tl-dot" aria-hidden="true"></div>
-        <div class="tl-date">First distro</div>
-        <div class="tl-name">Linux Mint</div>
-        <div class="tl-desc">Approachable and it just worked — enough to get me hooked.</div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot" aria-hidden="true"></div>
-        <div class="tl-date">Then</div>
-        <div class="tl-name">Ubuntu</div>
-        <div class="tl-desc">Used for compatibility with some tooling. Moved on when I could.</div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot" aria-hidden="true"></div>
-        <div class="tl-date">Where I settled in</div>
-        <div class="tl-name">Manjaro</div>
-        <div class="tl-desc">Arch-based with sane defaults and a rolling release. My first real Linux home.</div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot" aria-hidden="true"></div>
-        <div class="tl-date">Next</div>
-        <div class="tl-name">Arch Linux</div>
-        <div class="tl-desc">Minimal and hands-on. GPU driver friction on my hardware pushed me on.</div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot now" aria-hidden="true"></div>
-        <div class="tl-date">Current</div>
-        <div class="tl-name">CachyOS</div>
-        <div class="tl-desc">Arch-based and performance-tuned — the balance I wanted between current and stable.</div>
+    <div class="reveal">
+      <p class="label" style="margin-bottom:.6rem;">the distro arc</p>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-dot" aria-hidden="true"></div><div class="tl-date">Started on</div><div class="tl-name">Linux Mint</div><div class="tl-desc">It just worked. That was enough to get me hooked.</div></div>
+        <div class="tl-item"><div class="tl-dot" aria-hidden="true"></div><div class="tl-date">Then</div><div class="tl-name">Ubuntu</div><div class="tl-desc">For tooling compatibility. Moved on once I could.</div></div>
+        <div class="tl-item"><div class="tl-dot" aria-hidden="true"></div><div class="tl-date">Settled into</div><div class="tl-name">Manjaro</div><div class="tl-desc">Rolling release with sane defaults — my first proper Linux home.</div></div>
+        <div class="tl-item"><div class="tl-dot" aria-hidden="true"></div><div class="tl-date">Went deeper</div><div class="tl-name">Arch Linux</div><div class="tl-desc">Built from the ground up. GPU driver friction on my hardware pushed me on.</div></div>
+        <div class="tl-item"><div class="tl-dot now" aria-hidden="true"></div><div class="tl-date">Daily driver</div><div class="tl-name">CachyOS</div><div class="tl-desc">Arch-based, performance-tuned. Current and stable enough.</div></div>
       </div>
     </div>
 
-    <div class="reveal reveal-delay-1">
+    <div class="reveal d1">
       <div class="panel">
-        <div class="back-title">Infrastructure I've run at home</div>
-        <ul class="back-list">
+        <h3 class="panel-title">What I've run at home</h3>
+        <ul class="list">
           <li>Game servers — Minecraft, Rust, SCUM</li>
-          <li>A small VPS — deployment, basic hardening, upkeep</li>
+          <li>A small VPS — deploy, basic hardening, upkeep</li>
           <li>Self-hosted storage (TrueNAS / OpenMediaVault)</li>
           <li>Docker containers and troubleshooting</li>
-          <li>QEMU/KVM virtual machines, including nested setups</li>
-          <li>A local LLM with Ollama, kept fully offline</li>
+          <li>QEMU/KVM VMs, including nested setups</li>
+          <li>A local LLM on Ollama, fully offline</li>
         </ul>
       </div>
       <div class="panel">
-        <div class="back-title">Homelab: a networking problem I worked through</div>
-        <p class="panel-text">Ran an LLM in a QEMU VM with all its traffic forced through a VPN with a kill-switch. The VPN's TUN interface and QEMU's virtual bridge conflicted; I worked it out with manual iptables rules and a separate network namespace. Slow going, but it taught me more about Linux routing than any lab.</p>
-        <div class="badge-row"><span class="badge">QEMU/KVM</span><span class="badge">iptables</span><span class="badge">network namespaces</span></div>
+        <h3 class="panel-title">Debug story: VPN vs. VM bridge</h3>
+        <p class="panel-text"><b>Goal:</b> run an LLM in a QEMU VM with every packet forced through a VPN with a kill-switch.</p>
+        <p class="panel-text"><b>Problem:</b> the VPN's TUN interface and QEMU's virtual bridge were fighting over routing.</p>
+        <p class="panel-text"><b>Fix:</b> manual iptables rules plus a dedicated network namespace. Slow going — and it taught me more about Linux routing than any lab.</p>
+        <div class="badge-row"><span class="badge">QEMU/KVM</span><span class="badge">iptables</span><span class="badge">netns</span><span class="badge">VPN / TUN</span></div>
       </div>
     </div>
   </div>
@@ -727,158 +591,169 @@
 
 <div class="divider"></div>
 
+<!-- ============ PROJECT ============ -->
 <section id="project">
-  <div class="net-label reveal"><span class="via" aria-hidden="true"></span><span>NET.OPEN-SOURCE</span></div>
-  <h2 class="section-title reveal">Tongfang Control Centre</h2>
-  <p class="section-desc reveal">A personal project. The stock control software for these laptops is limited, so I built a replacement.</p>
+  <p class="label reveal"><span class="num">04</span> open-source</p>
+  <h2 class="section-title reveal">Projects</h2>
+  <p class="section-desc reveal">How I build: I reverse-engineer the hardware, plan the architecture and define exactly how it should behave — then direct AI to write the code, and test it on real hardware until it works. Rust is my language of choice for the speed and memory safety.</p>
 
-  <div class="project-card reveal">
-    <div class="project-header">
-      <div class="project-title">Tongfang / Aistone Laptop Control Centre</div>
-      <div class="project-links">
-        <a class="btn btn-copper" href="https://github.com/Aineasg/Tongfang-Control-center-improved" target="_blank" rel="noopener">View on GitHub ↗</a>
+  <article class="project reveal">
+    <div class="project-head">
+      <div>
+        <h3 class="project-title">Tongfang / Aistone Control Centre</h3>
+        <p class="project-sub">Native Linux control app for niche enthusiast laptops — written in Rust, open source.</p>
+        <div class="badge-row"><span class="badge">Rust</span><span class="badge">ACPI</span><span class="badge">Embedded Controller</span><span class="badge">Reverse engineering</span><span class="badge">AI-assisted dev</span></div>
+      </div>
+      <a class="btn btn-copper" href="https://github.com/Aineasg/Tongfang-Control-center-improved" target="_blank" rel="noopener">View on GitHub ↗</a>
+    </div>
+    <div class="case">
+      <div class="case-col"><div class="case-k">The problem</div><p>Tongfang and Aistone laptops ship with limited official control software and no proper way to tune fans, power or lighting from Linux.</p></div>
+      <div class="case-col"><div class="case-k">What I did</div><p>Read the ACPI tables, watched EC register values change as I toggled settings and mapped what each one controls. Then I specced the app, directed the AI-written Rust code and tested every change on the hardware.</p></div>
+      <div class="case-col"><div class="case-k">The result</div><p>Custom fan curves by temperature, power-profile switching and keyboard backlight control — all from one native app, shipped and open source.</p></div>
+    </div>
+    <div class="project-foot"><p class="panel-text">Why it matters for a network role: it's the same loop as troubleshooting a link — observe, form a theory, test one change, document it.</p></div>
+  </article>
+
+  <div class="cards-grid" style="margin-top:1.1rem;">
+    <article class="card reveal d1">
+      <div class="card-top"><span class="card-icon" aria-hidden="true">⛏️</span><span class="pill done">Shipped</span></div>
+      <h3 class="card-title">Minecraft Server Manager</h3>
+      <p class="card-desc">A native Linux GUI for running and managing Fabric Minecraft servers — built from my own homelab need, no more juggling terminals and config files.</p>
+      <div class="badge-row"><span class="badge">Rust</span><span class="badge">GTK4</span><span class="badge">Linux</span></div>
+      <div class="card-note"><div class="card-note-inner"><a class="btn btn-ghost" href="https://github.com/Aineasg/minecraft-server-manager" target="_blank" rel="noopener">View on GitHub ↗</a></div></div>
+    </article>
+    <article class="card reveal d2">
+      <div class="card-top"><span class="card-icon" aria-hidden="true">📦</span><span class="pill wip">Always building</span></div>
+      <h3 class="card-title">More on GitHub</h3>
+      <p class="card-desc">Hardware tools, homelab utilities and whatever problem I'm solving this month. The repos show the work.</p>
+      <div class="card-note"><div class="card-note-inner"><a class="btn btn-ghost" href="https://github.com/Aineasg?tab=repositories" target="_blank" rel="noopener">All repositories ↗</a></div></div>
+    </article>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills">
+  <p class="label reveal"><span class="num">05</span> skills-at-a-glance</p>
+  <h2 class="section-title reveal">Skills, Honestly Rated</h2>
+  <p class="section-desc reveal">The 10-second version for anyone skimming.</p>
+
+  <div class="skills">
+    <div class="skill-col reveal d1">
+      <div class="skill-head"><span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><h3>Confident</h3></div>
+      <div class="tags">
+        <span class="tag">Linux admin (Arch-based)</span><span class="tag">Laptop &amp; desktop board-level diagnosis</span><span class="tag">SPI flash programming</span><span class="tag">Soldering &amp; hot air</span><span class="tag">PC builds</span><span class="tag">Docker</span><span class="tag">QEMU/KVM</span>
       </div>
     </div>
-    <div class="project-tags">
-      <span class="badge">Firmware analysis</span>
-      <span class="badge">Embedded Controller</span>
-      <span class="badge">Open Source</span>
-      <span class="badge">Rust</span>
-      <span class="badge">ACPI</span>
+    <div class="skill-col reveal d2">
+      <div class="skill-head"><span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span><h3>Working knowledge</h3></div>
+      <div class="tags">
+        <span class="tag">IPv4 / IPv6 &amp; subnetting</span><span class="tag">Cisco IOS CLI</span><span class="tag">VLANs &amp; trunking</span><span class="tag">iptables</span><span class="tag">Network namespaces</span><span class="tag">OpenWRT</span><span class="tag">Self-hosting</span><span class="tag">Hardware reverse engineering</span><span class="tag">AI-assisted dev (Rust)</span>
+      </div>
     </div>
-    <p class="project-desc">Tongfang and Aistone laptops are niche enthusiast machines with basic official control software. On my own hardware, I studied the Embedded Controller by reading ACPI tables and watching register values change, then built an open-source app that exposes fan curves, power profiles and keyboard backlight control. It's a personal project and still evolving — the repo shows the work.</p>
-    <div class="project-features">
-      <div class="feature-line">Keyboard backlight control</div>
-      <div class="feature-line">Custom fan curves by temperature</div>
-      <div class="feature-line">EC communication via ACPI</div>
-      <div class="feature-line">Power-profile switching</div>
-      <div class="feature-line">Written in Rust, open source</div>
-      <div class="feature-line">Fills gaps in the stock software</div>
+    <div class="skill-col reveal d3">
+      <div class="skill-head"><span class="meter" aria-hidden="true"><i class="on"></i><i></i><i></i></span><h3>Learning now</h3></div>
+      <div class="tags">
+        <span class="tag">Full CCNA 200-301</span><span class="tag">Spanning tree</span><span class="tag">OSPF</span><span class="tag">Fibre / FTTH</span><span class="tag">BGA rework</span>
+      </div>
     </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<section id="positioning">
-  <div class="net-label reveal"><span class="via" aria-hidden="true"></span><span>NET.WORK-STYLE</span></div>
+<!-- ============ FIT ============ -->
+<section id="fit">
+  <p class="label reveal"><span class="num">06</span> where-i-fit</p>
   <h2 class="section-title reveal">Where I Fit</h2>
-  <p class="section-desc reveal">I'm starting out, and I know it. Here's the honest picture of what I bring and the roles I'm aiming for.</p>
+  <p class="section-desc reveal">Early career, and I'm not going to pretend otherwise. Here's what you'd actually get.</p>
 
-  <div class="manifesto-box reveal">
-    <p class="manifesto-text">Give me a clear brief and I'll work through the problem carefully, keep notes as I go, and ask when I'm not sure. <strong>I'm most useful where hardware, networking and Linux meet — the endpoint, the link between, and the box at each end.</strong></p>
+  <div class="manifesto reveal">
+    <p>Give me a clear brief and I'll work it through, keep notes, and ask before I guess. <strong>I'm most useful where hardware, networking and Linux overlap — the device, the link, and the box at each end.</strong></p>
   </div>
 
   <div class="cards-grid">
-    <div class="flip-card reveal" tabindex="0" role="button" aria-label="How I contribute — show detail">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">⚙️</div>
-          <div class="card-subtitle">What I bring</div>
-          <div class="card-title">How I Contribute</div>
-          <p class="card-desc">Take direction well, write things down, and dig into a problem before escalating it. Comfortable being supervised and learning a site's kit.</p>
-          <p class="card-hint">Hover for detail</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">In practice</div>
-          <ul class="back-list">
-            <li>Follow a brief and check in on progress</li>
-            <li>Document fixes and configs for the next person</li>
-            <li>Diagnose before replacing parts</li>
-            <li>Learn the site's tools and conventions</li>
-            <li>Reliable with routine work, not just the interesting jobs</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card reveal reveal-delay-1" tabindex="0" role="button" aria-label="Target roles — show list">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">🎯</div>
-          <div class="card-subtitle">Target roles</div>
-          <div class="card-title">What I'm Aiming For</div>
-          <p class="card-desc">Entry-level roles in telecommunications, networking and IT support — bench or field.</p>
-          <p class="card-hint">Hover for role list</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">Roles</div>
-          <ul class="back-list">
-            <li>Network / field technician (FTTH, structured cabling)</li>
-            <li>NOC or network operations trainee</li>
-            <li>IT support / helpdesk</li>
-            <li>Bench or field hardware technician</li>
-            <li>Linux systems support</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card reveal reveal-delay-2" tabindex="0" role="button" aria-label="Availability and location — show detail">
-      <div class="flip-card-inner">
-        <div class="flip-front">
-          <div class="card-icon" aria-hidden="true">🌍</div>
-          <div class="card-subtitle">Availability &amp; location</div>
-          <div class="card-title">Where I Can Work</div>
-          <p class="card-desc">Based in Western Greece. On-site or hybrid, and open to relocating within the EU for the right role.</p>
-          <p class="card-hint">Hover for details</p>
-        </div>
-        <div class="flip-back">
-          <div class="back-title">Details</div>
-          <ul class="back-list">
-            <li>Based in Ilia, Western Greece</li>
-            <li>On-site or hybrid — available now</li>
-            <li>Open to relocation within the EU</li>
-            <li>EU work rights (Greek citizen)</li>
-            <li>English (native), Greek (working proficiency)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <article class="card reveal d1">
+      <div class="card-top"><span class="card-icon" aria-hidden="true">⚙️</span></div>
+      <h3 class="card-title">How I Work</h3>
+      <ul class="list">
+        <li>Follow the brief and check in on progress</li>
+        <li>Document fixes and configs for the next person</li>
+        <li>Diagnose before replacing parts</li>
+        <li>Pick up a site's tools and conventions fast</li>
+        <li>Reliable on routine jobs, not just the fun ones</li>
+      </ul>
+    </article>
+    <article class="card reveal d2">
+      <div class="card-top"><span class="card-icon" aria-hidden="true">🎯</span></div>
+      <h3 class="card-title">Roles I'm After</h3>
+      <ul class="list">
+        <li><b>The goal:</b> network engineer, Australia, post-CCNA</li>
+        <li>Network / field technician (FTTH, structured cabling)</li>
+        <li>NOC / network operations trainee</li>
+        <li>IT support / helpdesk</li>
+        <li>Bench or field hardware technician</li>
+        <li>Linux systems support</li>
+      </ul>
+    </article>
+    <article class="card reveal d3">
+      <div class="card-top"><span class="card-icon" aria-hidden="true">🌍</span></div>
+      <h3 class="card-title">Availability &amp; Location</h3>
+      <ul class="list">
+        <li>Based in Ilia, Western Greece</li>
+        <li>On-site or hybrid — available now</li>
+        <li>Open to relocating within the EU or to Australia</li>
+        <li>Greek &amp; Australian citizen — no visa needed in either</li>
+        <li>English (native), Greek (working proficiency)</li>
+      </ul>
+    </article>
   </div>
 </section>
 
 <div class="divider"></div>
 
+<!-- ============ CONTACT ============ -->
 <section id="contact">
-  <div class="net-label reveal"><span class="via" aria-hidden="true"></span><span>NET.CONTACT</span></div>
-  <h2 class="section-title reveal">Get in Touch</h2>
-  <p class="section-desc reveal">If you have an entry-level opening in telecoms, networking or IT support, I'd like to hear about it.</p>
+  <p class="label reveal"><span class="num">07</span> contact</p>
+  <h2 class="section-title reveal">Let's Talk</h2>
+  <p class="section-desc reveal">Hiring in networking, telecoms or IT — in Greece, the EU or Australia? My inbox is open.</p>
 
   <div class="contact-grid">
     <div class="reveal">
-      <div class="contact-terminal">
-        <div class="terminal-header">
+      <div class="term">
+        <div class="term-bar">
           <div class="win-btn r" aria-hidden="true"></div><div class="win-btn y" aria-hidden="true"></div><div class="win-btn g" aria-hidden="true"></div>
-          <span class="terminal-name">contact.sh</span>
+          <span class="name">contact.sh</span>
         </div>
-        <div class="terminal-body">
+        <div class="term-body">
           <div class="t-row"><span class="t-key">name</span><span class="t-val">Aineias Giannakoulias (Αινείας Γιαννακούλιας)</span></div>
-          <div class="t-row"><span class="t-key">location</span><span class="t-val">Ilia, Western Greece (EU)</span></div>
+          <div class="t-row"><span class="t-key">location</span><span class="t-val">Ilia, Western Greece</span></div>
           <div class="t-row"><span class="t-key">email</span><span class="t-val"><a href="mailto:aineasg@gmail.com">aineasg@gmail.com</a></span></div>
           <div class="t-row"><span class="t-key">github</span><span class="t-val"><a href="https://github.com/Aineasg" target="_blank" rel="noopener">github.com/Aineasg</a></span></div>
           <div class="t-row"><span class="t-key">linkedin</span><span class="t-val"><a href="https://www.linkedin.com/in/aineas-giannakoulias-ab7a10301/" target="_blank" rel="noopener">in/aineas-giannakoulias</a></span></div>
-          <div class="t-row"><span class="t-key">status</span><span class="t-val ok">Open to work — Greece, or EU relocation</span></div>
+          <div class="t-row"><span class="t-key">status</span><span class="t-val ok">● open to work — Greece, EU or Australia</span></div>
         </div>
       </div>
       <div class="contact-ctas">
-        <a class="btn btn-copper" href="mailto:aineasg@gmail.com">Send email</a>
-        <a class="btn btn-ghost" href="https://github.com/Aineasg" target="_blank" rel="noopener">GitHub profile ↗</a>
-        <button type="button" class="btn btn-ghost" id="print-cv-2">Print / Save as PDF</button>
+        <a class="btn btn-copper" href="mailto:aineasg@gmail.com?subject=Role%20enquiry">Email me</a>
+        <button type="button" class="btn btn-ghost" id="copy-email">Copy email</button>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/aineas-giannakoulias-ab7a10301/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <button type="button" class="btn btn-ghost js-print">Save as PDF</button>
       </div>
     </div>
 
-    <div class="reveal reveal-delay-1">
+    <div class="reveal d1">
       <div class="panel panel-full">
-        <div class="back-title">Quick profile</div>
-        <ul class="back-list">
-          <li>Networks &amp; Telecommunications student, SAEK Pyrgos — semester 3 of 5</li>
-          <li>Studying for the Cisco CCNA 200-301</li>
-          <li>Hands-on component-level hardware repair (board-level on laptops)</li>
-          <li>Linux administration and self-hosted homelab infrastructure</li>
-          <li>Open-source BIOS/EC firmware project on GitHub</li>
-          <li>English (native), Greek (working proficiency)</li>
-          <li>Western Greece — open to relocation within the EU</li>
+        <h3 class="panel-title">TL;DR</h3>
+        <ul class="list">
+          <li>Networks &amp; Telecoms student, SAEK Pyrgos — semester 3 of 5</li>
+          <li>Studying for the Cisco CCNA 200-301 — aiming for network engineering in Australia</li>
+          <li>Board-level hardware repair on laptops &amp; desktops</li>
+          <li>Linux admin + self-hosted homelab</li>
+          <li>Shipped open-source Rust tools on GitHub (EC control centre, Minecraft server manager)</li>
+          <li>English (native), Greek (working)</li>
+          <li>Greece-based — open to the EU or Australia</li>
         </ul>
       </div>
     </div>
@@ -887,229 +762,152 @@
 </main>
 
 <footer>
-  <p>Aineias Giannakoulias · Αινείας Γιαννακούλιας · <a href="mailto:aineasg@gmail.com">aineasg@gmail.com</a> · <a href="https://github.com/Aineasg" target="_blank" rel="noopener">GitHub</a></p>
-  <p>Built by hand.</p>
+  <p>Aineias Giannakoulias · <a href="mailto:aineasg@gmail.com">aineasg@gmail.com</a> · <a href="https://github.com/Aineasg" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/aineas-giannakoulias-ab7a10301/" target="_blank" rel="noopener">LinkedIn</a></p>
+  <p>Hand-coded. No frameworks. © <span id="yr">2026</span></p>
 </footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
 (function () {
   'use strict';
-
   var root = document.documentElement;
 
-  /* =====================================================================
-     BOOT SCREEN — types the prompt, prints the status lines, hands over
-     ===================================================================== */
+  /* ---------- BOOT SCREEN ---------- */
   var boot = document.getElementById('boot');
   var log  = document.getElementById('boot-log');
   var fill = document.getElementById('boot-fill');
-
-  var PROMPT = 'aineias@bench:~$ ';
-  var CMD    = './status.sh';
-
+  var PROMPT = 'aineias@bench:~$ ', CMD = './status.sh';
   var LINES = [
-    { cls: 't-ok',    tag: '[  OK  ]', text: 'Linux workstation: CachyOS' },
-    { cls: 't-ok',    tag: '[  OK  ]', text: 'Cisco Packet Tracer: routing & switching labs' },
-    { cls: 't-ok',    tag: '[  OK  ]', text: 'Component-level hardware repair: ready' },
-    { cls: 't-dim',   tag: '[ INFO ]', text: 'SAEK Networks & Telecommunications: semester 3 of 5' },
-    { cls: 't-dim',   tag: '[ INFO ]', text: 'CCNA 200-301 study: in progress' },
-    { cls: 't-ready', tag: '[ READY]', text: 'Open to work — Greece or EU' }
+    ['t-ok',  '[  OK  ]', 'linux workstation: CachyOS'],
+    ['t-ok',  '[  OK  ]', 'packet tracer: routing & switching labs'],
+    ['t-ok',  '[  OK  ]', 'hardware bench: ready'],
+    ['t-dim', '[ INFO ]', 'SAEK networks & telecoms: semester 3/5'],
+    ['t-dim', '[ INFO ]', 'CCNA 200-301: in progress'],
+    ['t-ok',  '[ READY]', 'open to work']
   ];
-
-  var timers = [];
-  var finished = false;
-
+  var timers = [], finished = false;
   function later(fn, ms) { timers.push(setTimeout(fn, ms)); }
-
-  function esc(s) {
-    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  }
-
-  function addLine(html) {
-    var el = document.createElement('span');
-    el.className = 'line';
-    el.innerHTML = html;
-    log.appendChild(el);
-    return el;
-  }
-
-  function lineHTML(l) {
-    return '<span class="' + l.cls + '">' + esc(l.tag) + '</span> ' + esc(l.text);
-  }
-
-  /* Instant full render — used by skip and by the failsafe */
-  function renderAll() {
-    log.innerHTML = '';
-    addLine('<span class="t-dim">' + esc(PROMPT + CMD) + '</span>');
-    LINES.forEach(function (l) { addLine(lineHTML(l)); });
-    log.lastChild.innerHTML += ' <span class="caret"></span>';
-    if (fill) fill.style.width = '100%';
-  }
+  function esc(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  function addLine(html) { var el = document.createElement('span'); el.className = 'line'; el.innerHTML = html; log.appendChild(el); return el; }
+  function lineHTML(l) { return '<span class="' + l[0] + '">' + esc(l[1]) + '</span> ' + esc(l[2]); }
 
   function finish() {
     if (finished) return;
     finished = true;
-
     timers.forEach(clearTimeout);
-    timers = [];
     document.removeEventListener('keydown', finish);
     if (boot) boot.removeEventListener('click', finish);
-
     try { sessionStorage.setItem('boot-done', '1'); } catch (e) {}
-
     if (boot) boot.classList.add('done');
-    root.classList.remove('booting');   // releases the scroll lock
-    root.classList.add('booted');       // triggers the hero entrance
+    root.classList.remove('booting');
+    root.classList.add('booted');
     window.scrollTo(0, 0);
-
-    setTimeout(function () {
-      if (boot && boot.parentNode) boot.parentNode.removeChild(boot);
-    }, 700);
-
-    initReveals();  // scroll animations start now, not while hidden behind the overlay
+    setTimeout(function () { if (boot && boot.parentNode) boot.parentNode.removeChild(boot); }, 600);
+    initReveals();
   }
 
   function runBoot() {
     var i = 0, n = 0;
     var promptEl = addLine('<span class="t-dim">' + esc(PROMPT) + '</span><span class="caret"></span>');
-
-    function typeCmd() {
+    (function typeCmd() {
       if (finished) return;
       if (i <= CMD.length) {
         promptEl.innerHTML = '<span class="t-dim">' + esc(PROMPT + CMD.slice(0, i)) + '</span><span class="caret"></span>';
-        i++;
-        later(typeCmd, 32);
+        i++; later(typeCmd, 28);
       } else {
         promptEl.innerHTML = '<span class="t-dim">' + esc(PROMPT + CMD) + '</span>';
-        later(printLines, 200);
+        later(printLines, 150);
       }
-    }
-
+    })();
     function printLines() {
       if (finished) return;
       if (n < LINES.length) {
-        addLine(lineHTML(LINES[n]));
-        n++;
-        if (fill) fill.style.width = Math.round((n / LINES.length) * 100) + '%';
-        later(printLines, 135);
+        addLine(lineHTML(LINES[n])); n++;
+        if (fill) fill.style.width = Math.round(n / LINES.length * 100) + '%';
+        later(printLines, 110);
       } else {
         log.lastChild.innerHTML += ' <span class="caret"></span>';
-        later(finish, 450);
+        later(finish, 350);
       }
     }
-
-    typeCmd();
   }
 
   if (root.classList.contains('booting') && boot && log) {
     document.addEventListener('keydown', finish);
     boot.addEventListener('click', finish);
-    later(function () { renderAll(); finish(); }, 4000);  // hard failsafe
+    later(finish, 3000); // failsafe
     runBoot();
   } else {
     if (boot && boot.parentNode) boot.parentNode.removeChild(boot);
     initReveals();
   }
 
-  /* =====================================================================
-     SCROLL REVEAL
-     ===================================================================== */
+  /* ---------- SCROLL REVEAL + ACTIVE NAV ---------- */
   var revealsInit = false;
-
   function initReveals() {
     if (revealsInit) return;
     revealsInit = true;
-
-    var reveals = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    if (!('IntersectionObserver' in window) || reduce) {
+    var reveals = [].slice.call(document.querySelectorAll('.reveal'));
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       reveals.forEach(function (el) { el.classList.add('visible'); });
-      return;
+    } else {
+      var io = new IntersectionObserver(function (entries, obs) {
+        entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+      }, { rootMargin: '0px 0px -8% 0px' });
+      reveals.forEach(function (el) { io.observe(el); });
+      setTimeout(function () {
+        reveals.forEach(function (el) { if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('visible'); });
+      }, 500);
     }
 
-    var io = new IntersectionObserver(function (entries, obs) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          obs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
-
-    reveals.forEach(function (el) { io.observe(el); });
-
-    function sweep() {
-      reveals.forEach(function (el) {
-        if (el.classList.contains('visible')) return;
-        if (el.getBoundingClientRect().top < window.innerHeight) {
-          el.classList.add('visible');
-          io.unobserve(el);
-        }
-      });
-    }
-    setTimeout(sweep, 400);
-    setTimeout(sweep, 1500);
-    window.addEventListener('load', function () { setTimeout(sweep, 150); });
-    if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(function () { setTimeout(sweep, 60); });
+    var links = [].slice.call(document.querySelectorAll('.nav-links a'));
+    if ('IntersectionObserver' in window) {
+      var navIo = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          links.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id); });
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      document.querySelectorAll('main section[id]').forEach(function (s) { navIo.observe(s); });
     }
   }
 
-  /* =====================================================================
-     FLIP CARDS
-     ===================================================================== */
-  var coarse = window.matchMedia('(hover: none)');
+  /* ---------- PRINT ---------- */
+  document.querySelectorAll('.js-print').forEach(function (b) { b.addEventListener('click', function () { window.print(); }); });
 
-  document.querySelectorAll('.flip-card').forEach(function (card) {
-    card.setAttribute('aria-pressed', 'false');
-    function toggle() {
-      var flipped = card.classList.toggle('flipped');
-      card.setAttribute('aria-pressed', flipped ? 'true' : 'false');
-    }
-    card.addEventListener('click', function () { if (coarse.matches) toggle(); });
-    card.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') { e.preventDefault(); toggle(); }
-    });
+  /* ---------- COPY EMAIL ---------- */
+  var toast = document.getElementById('toast');
+  function showToast(msg) {
+    toast.textContent = msg; toast.classList.add('show');
+    setTimeout(function () { toast.classList.remove('show'); }, 1800);
+  }
+  var copyBtn = document.getElementById('copy-email');
+  if (copyBtn) copyBtn.addEventListener('click', function () {
+    var email = 'aineasg@gmail.com';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(email).then(function () { showToast('copied: ' + email); }, function () { showToast(email); });
+    } else { showToast(email); }
   });
 
-  /* =====================================================================
-     PRINT / SAVE AS PDF
-     ===================================================================== */
-  ['print-cv', 'print-cv-2'].forEach(function (id) {
-    var b = document.getElementById(id);
-    if (b) b.addEventListener('click', function () { window.print(); });
-  });
+  /* ---------- YEAR ---------- */
+  var yr = document.getElementById('yr'); if (yr) yr.textContent = new Date().getFullYear();
 
-  /* =====================================================================
-     MOBILE MENU
-     ===================================================================== */
-  var hamburger = document.getElementById('hamburger');
-  var mobileMenu = document.getElementById('mobile-menu');
-
+  /* ---------- MOBILE MENU ---------- */
+  var hamburger = document.getElementById('hamburger'), menu = document.getElementById('mobile-menu');
   function setMenu(open) {
-    mobileMenu.classList.toggle('open', open);
+    menu.classList.toggle('open', open);
     hamburger.classList.toggle('open', open);
     hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
     hamburger.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
     document.body.style.overflow = open ? 'hidden' : '';
   }
-
-  if (hamburger && mobileMenu) {
-    hamburger.addEventListener('click', function () {
-      setMenu(!mobileMenu.classList.contains('open'));
-    });
-    document.querySelectorAll('.mobile-nav-link').forEach(function (link) {
-      link.addEventListener('click', function () { setMenu(false); });
-    });
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) setMenu(false);
-    });
-    window.addEventListener('resize', function () {
-      if (window.innerWidth > 768 && mobileMenu.classList.contains('open')) setMenu(false);
-    });
+  if (hamburger && menu) {
+    hamburger.addEventListener('click', function () { setMenu(!menu.classList.contains('open')); });
+    document.querySelectorAll('.mobile-nav-link').forEach(function (l) { l.addEventListener('click', function () { setMenu(false); }); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && menu.classList.contains('open')) setMenu(false); });
+    window.addEventListener('resize', function () { if (window.innerWidth > 768 && menu.classList.contains('open')) setMenu(false); });
   }
-
 })();
 </script>
 </body>
